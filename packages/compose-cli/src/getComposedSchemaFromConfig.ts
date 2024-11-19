@@ -1,6 +1,7 @@
 import {
   buildSchema,
-  GraphQLObjectType,
+  getNamedType,
+  type GraphQLObjectType,
   isNamedType,
   Kind,
   parse,
@@ -11,14 +12,16 @@ import {
 } from 'graphql';
 import {
   composeSubgraphs,
+  futureAdditions,
   getAnnotatedSubgraphs,
+  type FutureAddition,
   type SubgraphConfig,
 } from '@graphql-mesh/fusion-composition';
 import type { Logger } from '@graphql-mesh/types';
 import { GraphQLFileLoader } from '@graphql-tools/graphql-file-loader';
 import { loadTypedefs } from '@graphql-tools/load';
 import { mergeSchemas } from '@graphql-tools/schema';
-import { printSchemaWithDirectives } from '@graphql-tools/utils';
+import { astFromValueUntyped, printSchemaWithDirectives } from '@graphql-tools/utils';
 import { fetch as defaultFetch } from '@whatwg-node/fetch';
 import type { LoaderContext, MeshComposeCLIConfig } from './types.js';
 
@@ -54,90 +57,6 @@ export async function getComposedSchemaFromConfig(config: MeshComposeCLIConfig, 
       };
     }),
   );
-
-  if (config.useHATEOAS) {
-    if (!config.additionalTypeDefs) {
-      config.additionalTypeDefs = '';
-    }
-
-    // the operationCatalog is used to map each link path to its relevant values
-    const operationCatalog = subgraphConfigsForComposition.reduce((catalog, config) => {
-      Object.entries(config.schema.getQueryType().getFields()).forEach(([key, value]) => {
-        const httpOperation = value.astNode.directives.find(
-          directive => directive.name.value === 'httpOperation',
-        );
-        if (!httpOperation) return;
-        const pathArgument = httpOperation.arguments.find(arg => arg.name.value === 'path');
-        if (!pathArgument) return;
-        if (pathArgument.value.kind === 'StringValue') {
-          const path = pathArgument.value.value.replace(/args./, '');
-          if (isNamedType(value.type)) {
-            catalog[path.replace(/(\{[^}]+\})/, '{}')] = {
-              sourceType: value.type.name,
-              sourceName: config.name,
-              sourceFieldName: key,
-              sourceArgs: (path.match(/\{([^}]+)\}/g) || []).map(param => param.slice(1, -1)),
-            };
-          }
-        }
-      });
-      return catalog;
-    }, {});
-
-    let additionalTypeDefsFromHATEOAS = '';
-    subgraphConfigsForComposition.forEach(conf => {
-      Object.entries(conf.schema.getTypeMap()).forEach(([key, value]) => {
-        if (value instanceof GraphQLObjectType) {
-          if (value.getFields()?._links) {
-            if (value.constructor.name === 'GraphQLObjectType') {
-              let subTypeDefs = `extend type ${key} {\n`;
-              // @ts-ignore
-              const links = value.getFields()?._links.type._links;
-              links.forEach(link => {
-                const linkName =
-                  typeof config.useHATEOAS === 'object' && config.useHATEOAS.linkNameIdentifier
-                    ? link[config.useHATEOAS.linkNameIdentifier]
-                    : link['rel'];
-                const linkPath =
-                  typeof config.useHATEOAS === 'object' && config.useHATEOAS.linkPathIdentifier
-                    ? link[config.useHATEOAS.linkPathIdentifier]
-                    : link['href'];
-                // remove path parameters
-                const linkPathAnonymized = linkPath?.replace(/(\{[^}]+\})/, '{}');
-                // get path parameters
-                const linkPathParams = (linkPath?.match(/\{([^}]+)\}/g) || []).map(param =>
-                  param.slice(1, -1),
-                );
-
-                const matchedCatalogPath = operationCatalog[linkPathAnonymized];
-                if (matchedCatalogPath) {
-                  const requiredSelectionSet = linkPathParams.map(param => param).join(',');
-                  const sourceArgs = matchedCatalogPath.sourceArgs
-                    .map((arg, index) => `${arg}: "{root.${linkPathParams[index]}}"`)
-                    .join(',');
-
-                  subTypeDefs += `${linkName}: ${matchedCatalogPath.sourceType}\n
-                    @resolveTo(\n
-                      sourceName: "${matchedCatalogPath.sourceName}"\n
-                      sourceTypeName: "Query"\n
-                      sourceFieldName: "${matchedCatalogPath.sourceFieldName}"\n
-                      requiredSelectionSet: "{ ${requiredSelectionSet} }"\n
-                      sourceArgs: { ${sourceArgs} }\n
-                    )\n`;
-                }
-              });
-              subTypeDefs += `}\n`;
-              // remove empty subTypeDefs
-              subTypeDefs = subTypeDefs.replace(`extend type ${key} {\n}\n`, '');
-              additionalTypeDefsFromHATEOAS += subTypeDefs;
-            }
-          }
-        }
-      });
-    });
-
-    config.additionalTypeDefs += additionalTypeDefsFromHATEOAS;
-  }
 
   let additionalTypeDefs: DocumentNode[] | undefined;
   if (config.additionalTypeDefs != null) {
@@ -203,8 +122,49 @@ export async function getComposedSchemaFromConfig(config: MeshComposeCLIConfig, 
     logger.error(`Unknown error: Supergraph is empty`);
     process.exit(1);
   }
+  let composedSchema: GraphQLSchema;
+  if (futureAdditions.length) {
+    let futureAddition: FutureAddition;
+    while ((futureAddition = futureAdditions.pop())) {
+      additionalTypeDefs ||= [];
+      composedSchema ||= buildSchema(result.supergraphSdl, {
+        noLocation: true,
+        assumeValid: true,
+        assumeValidSDL: true,
+      });
+      const sourceType = composedSchema.getType(futureAddition.sourceTypeName) as GraphQLObjectType;
+      if (!sourceType) {
+        logger.error(`Target type ${futureAddition.sourceTypeName} not found`);
+        process.exit(1);
+      }
+      const sourceField = sourceType.getFields()[futureAddition.sourceFieldName];
+      if (!sourceField) {
+        logger.error(`Target field ${futureAddition.sourceFieldName} not found`);
+        process.exit(1);
+      }
+      const sourceReturnType = getNamedType(sourceField.type);
+      if (!isNamedType(sourceReturnType)) {
+        logger.error(`Target field ${futureAddition.sourceFieldName} has no return type`);
+        process.exit(1);
+      }
+      additionalTypeDefs.push(
+        parse(/* GraphQL */ `
+          extend type ${futureAddition.targetTypeName} {
+            ${futureAddition.targetFieldName}: ${sourceReturnType}
+            @additionalField
+            @resolveTo(
+              sourceTypeName: "${futureAddition.sourceTypeName}",
+              sourceFieldName: "${futureAddition.sourceFieldName}",
+              sourceName: "${futureAddition.sourceName}",
+              sourceArgs: ${print(astFromValueUntyped(futureAddition.sourceArgs))},
+            )
+          }
+        `),
+      );
+    }
+  }
   if (additionalTypeDefs?.length /* TODO || config.transforms?.length */) {
-    let composedSchema = buildSchema(result.supergraphSdl, {
+    composedSchema ||= buildSchema(result.supergraphSdl, {
       noLocation: true,
       assumeValid: true,
       assumeValidSDL: true,

@@ -18,8 +18,8 @@ import type { Logger } from '@graphql-mesh/types';
 import { MapperKind, mapSchema } from '@graphql-tools/utils';
 import {
   HTTPOperationDirective,
-  LinkDirective,
   LinkResolverDirective,
+  OasLinkDirective,
   PubSubOperationDirective,
   ResolveRootDirective,
   ResponseMetadataDirective,
@@ -170,12 +170,12 @@ ${operationConfig.description || ''}
                 targetTypeName: fieldTypeName,
                 targetFieldName: linkObj.fieldName,
               };
-              schemaComposer.addDirective(LinkDirective);
+              schemaComposer.addDirective(OasLinkDirective);
               return {
                 ...targetField,
                 directives: [
                   {
-                    name: 'link',
+                    name: 'oas_link',
                     args: {
                       subgraph: subgraphName,
                       defaultRootType: rootTypeName,
@@ -183,8 +183,12 @@ ${operationConfig.description || ''}
                     },
                   },
                 ],
-                args: linkObj.args ? {} : targetField.args,
-                description: linkObj.description || targetField.description,
+                get args() {
+                  return linkObj.args ? {} : targetField?.args;
+                },
+                get description() {
+                  return linkObj.description || targetField?.description;
+                },
               };
             },
           });

@@ -30,6 +30,10 @@ describe('OpenAPI HATEOAS', () => {
             id
             name
             supplierId
+            self {
+              id
+              name
+            }
             supplier {
               id
               name
@@ -46,6 +50,10 @@ describe('OpenAPI HATEOAS', () => {
         id: 1,
         name: 'Laptop',
         supplierId: 11,
+        self: {
+          id: 1,
+          name: 'Laptop',
+        },
         supplier: {
           id: 11,
           name: 'Tech Supplier Inc.',

@@ -3,8 +3,10 @@ import type { JSONSchemaObject } from 'json-machete';
 import { dereferenceObject, handleUntitledDefinitions, resolvePath } from 'json-machete';
 import type { OpenAPIV2, OpenAPIV3 } from 'openapi-types';
 import { process } from '@graphql-mesh/cross-helpers';
+import { futureAdditions } from '@graphql-mesh/fusion-composition';
 import {
   getInterpolatedHeadersFactory,
+  getInterpolationKeys,
   stringInterpolator,
 } from '@graphql-mesh/string-interpolation';
 import type { Logger, MeshFetch } from '@graphql-mesh/types';
@@ -14,6 +16,7 @@ import {
   readFileOrUrl,
   sanitizeNameForGraphQL,
 } from '@graphql-mesh/utils';
+import { createDeferred } from '@graphql-tools/delegate';
 import type {
   HTTPMethod,
   JSONSchemaHTTPJSONOperationConfig,
@@ -38,6 +41,21 @@ interface GetJSONSchemaOptionsFromOpenAPIOptionsParams {
   logger?: Logger;
   jsonApi?: boolean;
 }
+
+type FutureLink = (
+  name: string,
+  oasDoc: OpenAPIV3.Document | OpenAPIV2.Document,
+  methodObjFieldMap: MethodObjFieldMap,
+) => boolean;
+
+type MethodObjFieldMap = WeakMap<
+  OpenAPIV2.OperationObject | OpenAPIV3.OperationObject,
+  JSONSchemaHTTPJSONOperationConfig & {
+    responseByStatusCode: Record<string, JSONSchemaOperationResponseConfig>;
+  }
+>;
+
+const futureLinks = new Set<FutureLink>();
 
 export async function getJSONSchemaOptionsFromOpenAPIOptions(
   name: string,
@@ -168,6 +186,12 @@ export async function getJSONSchemaOptionsFromOpenAPIOptions(
     OpenAPIV2.OperationObject | OpenAPIV3.OperationObject,
     OperationConfig
   >();
+
+  for (const futureLink of futureLinks) {
+    if (futureLink(name, oasOrSwagger, methodObjFieldMap)) {
+      break;
+    }
+  }
 
   for (const relativePath in oasOrSwagger.paths) {
     const pathObj = oasOrSwagger.paths[relativePath];
@@ -510,6 +534,79 @@ export async function getJSONSchemaOptionsFromOpenAPIOptions(
             type: 'null',
             description: responseObj.description,
           };
+        }
+
+        if (schemaObj?.properties?._links?.properties) {
+          const links = (responseByStatusCode[responseKey].links ||= {});
+          await Promise.all(
+            (Object.keys(schemaObj.properties._links.properties) as string[]).map(
+              async linkName => {
+                const xLinkObj = schemaObj.properties?._links?.['x-links']?.find(
+                  link => link.rel === linkName,
+                );
+                if (xLinkObj) {
+                  const xLinkHref = xLinkObj.href;
+                  const cleanXLinkHref = xLinkHref.replace(/{[^}]+}/g, '');
+                  const deferred = createDeferred<void>();
+                  function findActualOperationAndPath(
+                    possibleName: string,
+                    possibleOasDoc: typeof oasOrSwagger,
+                    possibleMethodObjFieldMap: typeof methodObjFieldMap,
+                  ) {
+                    let actualOperation: OpenAPIV3.OperationObject;
+                    let actualPath: string;
+                    for (const path in possibleOasDoc.paths) {
+                      const cleanPath = path.replace(/{[^}]+}/g, '');
+                      if (cleanPath === cleanXLinkHref) {
+                        actualPath = path;
+                        actualOperation = possibleOasDoc.paths[path][method];
+                        break;
+                      }
+                    }
+                    if (actualOperation) {
+                      const args = {};
+                      const paramsInLink = getInterpolationKeys(xLinkHref);
+                      const paramsInTarget = getInterpolationKeys(actualPath);
+                      for (const paramIndex in paramsInTarget) {
+                        args[paramsInTarget[paramIndex]] = `{root['${paramsInLink[paramIndex]}']}`;
+                      }
+                      if (possibleName === name) {
+                        links[linkName] = {
+                          get fieldName() {
+                            const linkOperationConfig =
+                              possibleMethodObjFieldMap.get(actualOperation);
+                            return linkOperationConfig.field;
+                          },
+                          args,
+                        };
+                      } else {
+                        futureAdditions.push({
+                          targetTypeName: schemaObj.title,
+                          targetFieldName: linkName,
+                          sourceName: possibleName,
+                          sourceTypeName: 'Query',
+                          get sourceFieldName() {
+                            const linkOperationConfig =
+                              possibleMethodObjFieldMap.get(actualOperation);
+                            return linkOperationConfig.field;
+                          },
+                          sourceArgs: args,
+                        });
+                      }
+                      futureLinks.delete(findActualOperationAndPath);
+                      deferred.resolve();
+                      return true;
+                    }
+                    return false;
+                  }
+                  if (!findActualOperationAndPath(name, oasOrSwagger, methodObjFieldMap)) {
+                    futureLinks.add(findActualOperationAndPath);
+                  }
+                  return deferred.promise;
+                }
+              },
+            ),
+          );
         }
 
         if ('links' in responseObj) {
