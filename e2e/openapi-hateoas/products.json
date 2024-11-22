@@ -39,9 +39,19 @@
     "schemas": {
       "Product": {
         "type": "object",
+        "discriminator": {
+          "propertyName": "_type",
+          "mapping": {
+            "ELECTRONICS": "#/components/schemas/Electronics",
+            "CLOTHING": "#/components/schemas/Clothing"
+          }
+        },
         "properties": {
           "_links": {
             "$ref": "#/components/schemas/ProductLinks"
+          },
+          "_type": {
+            "type": "string"
           },
           "id": {
             "type": "integer"
@@ -56,6 +66,36 @@
             "type": "integer"
           }
         }
+      },
+      "Electronics": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Product"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "warranty": {
+                "type": "string"
+              }
+            }
+          }
+        ]
+      },
+      "Clothing": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Product"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "material": {
+                "type": "string"
+              }
+            }
+          }
+        ]
       },
       "ProductLinks": {
         "type": "object",

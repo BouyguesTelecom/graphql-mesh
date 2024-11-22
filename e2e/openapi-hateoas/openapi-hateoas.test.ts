@@ -27,16 +27,19 @@ describe('OpenAPI HATEOAS', () => {
       query: /* GraphQL */ `
         query GetProductsById {
           getProductById(id: 1) {
-            id
-            name
-            supplierId
-            self {
+            ... on Electronics {
               id
               name
-            }
-            supplier {
-              id
-              name
+              supplierId
+              warranty
+              self {
+                id
+                name
+              }
+              supplier {
+                id
+                name
+              }
             }
           }
         }
@@ -50,6 +53,7 @@ describe('OpenAPI HATEOAS', () => {
         id: 1,
         name: 'Laptop',
         supplierId: 11,
+        warranty: '01-01-2027',
         self: {
           id: 1,
           name: 'Laptop',

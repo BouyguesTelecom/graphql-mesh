@@ -6121,6 +6121,27 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@graphql-mesh/fusion-composition@npm:^0.6.7":
+  version: 0.6.7
+  resolution: "@graphql-mesh/fusion-composition@npm:0.6.7"
+  dependencies:
+    "@graphql-mesh/utils": "npm:^0.102.13"
+    "@graphql-tools/schema": "npm:^10.0.5"
+    "@graphql-tools/stitching-directives": "npm:^3.1.9"
+    "@graphql-tools/utils": "npm:^10.5.5"
+    "@theguild/federation-composition": "npm:^0.14.0"
+    change-case: "npm:^4.1.2"
+    graphql-scalars: "npm:^1.23.0"
+    minimatch: "npm:^10.0.0"
+    pluralize: "npm:^8.0.0"
+    snake-case: "npm:^3.0.0"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+  checksum: 10c0/1e02aae8e9e682f3c8594be48ec00460b9e3f68f41f34fbdf10de30a1fe87391d1fb4d0096364a931baead406d4c4a0279f3c8c9d120c3d21980d8c6e1c21ffe
+  languageName: node
+  linkType: hard
+
 "@graphql-mesh/fusion-composition@npm:^0.7.0, @graphql-mesh/fusion-composition@workspace:packages/fusion/composition":
   version: 0.0.0-use.local
   resolution: "@graphql-mesh/fusion-composition@workspace:packages/fusion/composition"
@@ -7561,7 +7582,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@graphql-mesh/utils@npm:^0.102.10, @graphql-mesh/utils@npm:^0.102.12":
+"@graphql-mesh/utils@npm:^0.102.10, @graphql-mesh/utils@npm:^0.102.12, @graphql-mesh/utils@npm:^0.102.13":
   version: 0.102.13
   resolution: "@graphql-mesh/utils@npm:0.102.13"
   dependencies:

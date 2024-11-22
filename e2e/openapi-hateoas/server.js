@@ -10,20 +10,24 @@ const products = [
     name: 'Laptop',
     price: 1200,
     supplierId: 11,
+    warranty: '01-01-2027',
     _links: {
       self: { href: 'http://localhost:3000/products/1' },
       supplier: { href: 'http://localhost:3000/suppliers/11' },
     },
+    _type: 'ELECTRONICS',
   },
   {
     id: 2,
     name: 'Phone',
     price: 800,
     supplierId: 12,
+    warranty: '01-01-2025',
     _links: {
       self: { href: 'http://localhost:3000/products/2' },
       supplier: { href: 'http://localhost:3000/suppliers/12' },
     },
+    _type: 'ELECTRONICS',
   },
 ];
 
