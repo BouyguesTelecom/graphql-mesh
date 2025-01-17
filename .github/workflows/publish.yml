@@ -37,7 +37,7 @@ jobs:
           npm run test
 
       - name: Publish Json Machete on NPM 📦
-        run: npm version --workspace packages/@bouyguestelecom/graphql-json-machete --no-git-tag-version ${{ steps.get_version.outputs.VERSION }} && npm publish --workspace packages/@bouyguestelecom/graphql-json-machete --access public
+        run: npm version --workspace packages/@bouygues-telecom/graphql-json-machete --no-git-tag-version ${{ steps.get_version.outputs.VERSION }} && npm publish --workspace packages/@bouygues-telecom/graphql-json-machete --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_TOKEN }}
 

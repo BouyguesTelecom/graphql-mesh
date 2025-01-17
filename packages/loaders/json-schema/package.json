@@ -51,7 +51,7 @@
     "graphql-compose": "^9.0.11",
     "graphql-fields": "^2.0.3",
     "graphql-scalars": "^1.22.4",
-    "@bouyguestelecom/graphql-json-machete": "0.97.5",
+    "@bouygues-telecom/graphql-json-machete": "0.97.5",
     "pascal-case": "3.1.2",
     "qs": "6.13.1",
     "to-json-schema": "0.2.5",

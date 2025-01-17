@@ -1,5 +1,5 @@
-import type { JSONSchemaObject } from '@bouyguestelecom/graphql-json-machete';
-import { AnySchema } from '@bouyguestelecom/graphql-json-machete';
+import type { JSONSchemaObject } from '@bouygues-telecom/graphql-json-machete';
+import { AnySchema } from '@bouygues-telecom/graphql-json-machete';
 import toJsonSchema from 'to-json-schema';
 import { getInterpolationKeys } from '@graphql-mesh/string-interpolation';
 import type { Logger, MeshFetch } from '@graphql-mesh/types';

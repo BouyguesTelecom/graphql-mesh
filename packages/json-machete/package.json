@@ -1,11 +1,11 @@
 {
-  "name": "@bouyguestelecom/graphql-@bouyguestelecom/graphql-json-machete",
+  "name": "@bouygues-telecom/graphql-json-machete",
   "version": "0.97.5",
   "type": "module",
   "repository": {
     "type": "git",
     "url": "BouyguesTelecom/graphql-mesh",
-    "directory": "packages/@bouyguestelecom/graphql-json-machete"
+    "directory": "packages/@bouygues-telecom/graphql-json-machete"
   },
   "license": "MIT",
   "engines": {

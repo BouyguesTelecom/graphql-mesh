@@ -1,6 +1,6 @@
 import type { GraphQLScalarType, OperationTypeNode } from 'graphql';
 import type { PromiseOrValue } from 'graphql/jsutils/PromiseOrValue.js';
-import type { JSONSchema, JSONSchemaObject } from '@bouyguestelecom/graphql-json-machete';
+import type { JSONSchema, JSONSchemaObject } from '@bouygues-telecom/graphql-json-machete';
 import type { IStringifyOptions } from 'qs';
 import type { ResolverData } from '@graphql-mesh/string-interpolation';
 import type { Logger, MeshFetch, MeshPubSub } from '@graphql-mesh/types';

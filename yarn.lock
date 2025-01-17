@@ -6333,7 +6333,7 @@ __metadata:
     "@json-schema-tools/meta-schema": "npm:1.7.5"
     "@omnigraph/json-schema": "npm:0.108.9"
     graphql-compose: "npm:9.0.11"
-    @bouyguestelecom/graphql-json-machete: "npm:0.97.5"
+    @bouygues-telecom/graphql-json-machete: "npm:0.97.5"
     tslib: "npm:^2.4.0"
   peerDependencies:
     graphql: "*"
@@ -10146,7 +10146,7 @@ __metadata:
     graphql-compose: "npm:^9.0.11"
     graphql-fields: "npm:^2.0.3"
     graphql-scalars: "npm:^1.22.4"
-    @bouyguestelecom/graphql-json-machete: "npm:0.97.5"
+    @bouygues-telecom/graphql-json-machete: "npm:0.97.5"
     pascal-case: "npm:3.1.2"
     qs: "npm:6.13.1"
     to-json-schema: "npm:0.2.5"
@@ -10240,7 +10240,7 @@ __metadata:
     fets: "npm:0.8.4"
     graphql-yoga: "npm:5.10.6"
     json-bigint-patch: "npm:0.0.8"
-    @bouyguestelecom/graphql-json-machete: "npm:^0.97.5"
+    @bouygues-telecom/graphql-json-machete: "npm:^0.97.5"
     openapi-types: "npm:^12.1.0"
     tslib: "npm:^2.4.0"
   peerDependencies:
@@ -10262,7 +10262,7 @@ __metadata:
     "@omnigraph/json-schema": "npm:0.108.9"
     "@whatwg-node/fetch": "npm:^0.10.0"
     change-case: "npm:4.1.2"
-    @bouyguestelecom/graphql-json-machete: "npm:0.97.5"
+    @bouygues-telecom/graphql-json-machete: "npm:0.97.5"
     to-json-schema: "npm:0.2.5"
     tslib: "npm:^2.4.0"
   peerDependencies:
@@ -25154,9 +25154,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bouyguestelecom/graphql-json-machete@npm:0.97.5, @bouyguestelecom/graphql-json-machete@npm:^0.97.5, @bouyguestelecom/graphql-json-machete@workspace:packages/@bouyguestelecom/graphql-json-machete":
+"@bouygues-telecom/graphql-json-machete@npm:0.97.5, @bouygues-telecom/graphql-json-machete@npm:^0.97.5, @bouygues-telecom/graphql-json-machete@workspace:packages/@bouygues-telecom/graphql-json-machete":
   version: 0.0.0-use.local
-  resolution: "@bouyguestelecom/graphql-json-machete@workspace:packages/@bouyguestelecom/graphql-json-machete"
+  resolution: "@bouygues-telecom/graphql-json-machete@workspace:packages/@bouygues-telecom/graphql-json-machete"
   dependencies:
     "@json-schema-tools/meta-schema": "npm:1.7.5"
     "@types/json-pointer": "npm:1.0.34"
