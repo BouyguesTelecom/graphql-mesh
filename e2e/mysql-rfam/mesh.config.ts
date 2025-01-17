@@ -1,4 +1,4 @@
-import { defineConfig as defineComposeConfig } from '@graphql-mesh/compose-cli';
+import { defineConfig as defineComposeConfig } from '@bouygues-telecom/graphql-compose-cli';
 import { loadMySQLSubgraph } from '@omnigraph/mysql';
 
 export const composeConfig = defineComposeConfig({

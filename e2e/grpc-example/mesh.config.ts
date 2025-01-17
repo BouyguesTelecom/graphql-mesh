@@ -3,7 +3,7 @@ import { defineConfig as defineGatewayConfig } from '@graphql-hive/gateway';
 import {
   createNamingConventionTransform,
   defineConfig as defineComposeConfig,
-} from '@graphql-mesh/compose-cli';
+} from '@bouygues-telecom/graphql-compose-cli';
 import { loadGrpcSubgraph } from '@omnigraph/grpc';
 
 const opts = Opts(process.argv);

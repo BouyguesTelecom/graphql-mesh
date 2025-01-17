@@ -3,7 +3,7 @@ import {
   createFederationTransform,
   defineConfig as defineComposeConfig,
   loadGraphQLHTTPSubgraph,
-} from '@graphql-mesh/compose-cli';
+} from '@bouygues-telecom/graphql-compose-cli';
 import { useApolloInlineTrace } from '@graphql-yoga/plugin-apollo-inline-trace';
 
 export const composeConfig = defineComposeConfig({

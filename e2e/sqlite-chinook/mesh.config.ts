@@ -1,4 +1,4 @@
-import { defineConfig } from '@graphql-mesh/compose-cli';
+import { defineConfig } from '@bouygues-telecom/graphql-compose-cli';
 import { loadSQLiteSubgraph } from '@omnigraph/sqlite';
 
 export const composeConfig = defineConfig({

@@ -5,7 +5,7 @@ import {
   createTypeReplaceTransform,
   defineConfig as defineComposeConfig,
   loadGraphQLHTTPSubgraph,
-} from '@graphql-mesh/compose-cli';
+} from '@bouygues-telecom/graphql-compose-cli';
 import { loadOpenAPISubgraph } from '@omnigraph/openapi';
 
 const opts = Opts(process.argv);

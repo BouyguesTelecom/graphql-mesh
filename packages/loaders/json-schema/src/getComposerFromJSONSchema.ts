@@ -51,8 +51,8 @@ import {
   GraphQLURL,
   GraphQLUUID,
 } from 'graphql-scalars';
-import type { JSONSchema, JSONSchemaObject } from 'json-machete';
-import { visitJSONSchema } from 'json-machete';
+import type { JSONSchema, JSONSchemaObject } from '@bouyguestelecom/graphql-json-machete';
+import { visitJSONSchema } from '@bouyguestelecom/graphql-json-machete';
 import type { Logger } from '@graphql-mesh/types';
 import { sanitizeNameForGraphQL } from '@graphql-mesh/utils';
 import {

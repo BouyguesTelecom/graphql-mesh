@@ -1,5 +1,5 @@
-import type { JSONSchemaObject } from 'json-machete';
-import { getAbsolutePath, getCwd } from 'json-machete';
+import type { JSONSchemaObject } from '@bouyguestelecom/graphql-json-machete';
+import { getAbsolutePath, getCwd } from '@bouyguestelecom/graphql-json-machete';
 import toJsonSchema from 'to-json-schema';
 import type { api10 } from '@ardatan/raml-1-parser';
 import { loadApi } from '@ardatan/raml-1-parser';

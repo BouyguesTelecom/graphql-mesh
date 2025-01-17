@@ -1,7 +1,7 @@
 import { OperationTypeNode } from 'graphql';
 import { useAuth0 } from '@envelop/auth0';
 import { defineConfig as defineGatewayConfig, useStaticFiles } from '@graphql-hive/gateway';
-import { defineConfig as defineComposeConfig } from '@graphql-mesh/compose-cli';
+import { defineConfig as defineComposeConfig } from '@bouygues-telecom/graphql-compose-cli';
 import useOperationFieldPermissions from '@graphql-mesh/plugin-operation-field-permissions';
 import { loadJSONSchemaSubgraph } from '@omnigraph/json-schema';
 

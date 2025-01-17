@@ -14,7 +14,7 @@ graph.
 The example below loads a GraphQL subgraph. You can see available source handlers on the menu.
 
 ```ts filename="mesh-config.ts"
-import { defineConfig, loadGraphQLHTTPSubgraph } from '@graphql-mesh/compose-cli'
+import { defineConfig, loadGraphQLHTTPSubgraph } from '@bouygues-telecom/graphql-compose-cli'
 
 export const composeConfig = defineConfig({
   subgraphs: [
@@ -51,7 +51,7 @@ the Headers.
 In this example `operationHeaders` is used to defined the content of the request as Json:
 
 ```ts filename="mesh-config.ts" {9-11}
-import { defineConfig, loadGraphQLHTTPSubgraph } from '@graphql-mesh/compose-cli'
+import { defineConfig, loadGraphQLHTTPSubgraph } from '@bouygues-telecom/graphql-compose-cli'
 
 export const composeConfig = defineConfig({
   subgraphs: [
@@ -82,7 +82,7 @@ The expression inside dynamic values should be as in JS.
 #### From Context
 
 ```ts filename="mesh-config.ts" {9-15}
-import { defineConfig, loadGraphQLHTTPSubgraph } from '@graphql-mesh/compose-cli'
+import { defineConfig, loadGraphQLHTTPSubgraph } from '@bouygues-telecom/graphql-compose-cli'
 
 export const composeConfig = defineConfig({
   subgraphs: [
@@ -111,7 +111,7 @@ Set up the variable on your environment, e.g `VERY_SECRET_TOKEN=12345`. Then you
 The config wil look something like:
 
 ```ts filename="mesh-config.ts" {9-11}
-import { defineConfig, loadGraphQLHTTPSubgraph } from '@graphql-mesh/compose-cli'
+import { defineConfig, loadGraphQLHTTPSubgraph } from '@bouygues-telecom/graphql-compose-cli'
 
 export const composeConfig = defineConfig({
   subgraphs: [

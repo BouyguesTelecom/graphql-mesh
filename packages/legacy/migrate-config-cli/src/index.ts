@@ -5,7 +5,7 @@ import { join } from 'node:path';
 import kebabCase from 'lodash.kebabcase';
 import { format } from 'prettier';
 import { findConfig } from '@graphql-mesh/cli';
-import { camelCase } from '@graphql-mesh/compose-cli';
+import { camelCase } from '@bouygues-telecom/graphql-compose-cli';
 import { getPackage } from '@graphql-mesh/config';
 import type { YamlConfig } from '@graphql-mesh/types';
 import { defaultImportFn } from '@graphql-mesh/utils';
@@ -36,7 +36,7 @@ export async function run() {
 
   // Create compose configuration
   const importMap = new Map<string, Set<string>>();
-  const addedPackages = new Set<string>(['@graphql-hive/gateway', '@graphql-mesh/compose-cli']);
+  const addedPackages = new Set<string>(['@graphql-hive/gateway', '@bouygues-telecom/graphql-compose-cli']);
   const removedPackages = new Set<string>(['@graphql-mesh/cli']);
 
   // Prepare Compose Configuration
@@ -101,7 +101,7 @@ check Hive Gateway's docs to consume a supergraph.`,
     composeConfigList.add(`fetch: customFetch,`);
   }
 
-  addImport(importMap, '@graphql-mesh/compose-cli', 'defineConfig as defineComposeConfig');
+  addImport(importMap, '@bouygues-telecom/graphql-compose-cli', 'defineConfig as defineComposeConfig');
   const configList = new Set<string>();
   const composeConfig = `
     export const composeConfig = defineComposeConfig({
@@ -357,7 +357,7 @@ function addImport(importMap: Map<string, Set<string>>, packageName: string, imp
 
 const handlerInfoMap = {
   graphql: {
-    packageName: '@graphql-mesh/compose-cli',
+    packageName: '@bouygues-telecom/graphql-compose-cli',
     oldPackageName: '@graphql-mesh/graphql',
     importName: 'loadGraphQLHTTPSubgraph',
   },
@@ -479,6 +479,6 @@ function handleTransformConfiguration(
     console.error(transformInfo.deprecated);
     process.exit(1);
   }
-  addImport(importMap, '@graphql-mesh/compose-cli', transformInfo.fnName);
+  addImport(importMap, '@bouygues-telecom/graphql-compose-cli', transformInfo.fnName);
   return `${transformInfo.fnName}(${JSON.stringify(transformConfig)})`;
 }

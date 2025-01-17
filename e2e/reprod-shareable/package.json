@@ -2,6 +2,6 @@
   "name": "@e2e/reprod-shareable",
   "private": true,
   "dependencies": {
-    "@graphql-mesh/compose-cli": "workspace:*"
+    "@bouygues-telecom/graphql-compose-cli": "workspace:*"
   }
 }

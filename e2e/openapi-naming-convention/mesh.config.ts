@@ -3,7 +3,7 @@ import {
   createNamingConventionTransform,
   defineConfig as defineComposeConfig,
   upperCase,
-} from '@graphql-mesh/compose-cli';
+} from '@bouygues-telecom/graphql-compose-cli';
 import { loadOpenAPISubgraph } from '@omnigraph/openapi';
 
 export const composeConfig = defineComposeConfig({

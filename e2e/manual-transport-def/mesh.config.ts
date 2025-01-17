@@ -3,7 +3,7 @@ import { defineConfig as defineGatewayConfig } from '@graphql-hive/gateway';
 import {
   defineConfig as defineComposeConfig,
   loadGraphQLHTTPSubgraph,
-} from '@graphql-mesh/compose-cli';
+} from '@bouygues-telecom/graphql-compose-cli';
 import rest from '@graphql-mesh/transport-rest';
 import { loadOpenAPISubgraph } from '@omnigraph/openapi';
 

@@ -1,4 +1,4 @@
-import { defineConfig } from '@graphql-mesh/compose-cli';
+import { defineConfig } from '@bouygues-telecom/graphql-compose-cli';
 import { loadODataSubgraph } from '@omnigraph/odata';
 
 export const composeConfig = defineConfig({

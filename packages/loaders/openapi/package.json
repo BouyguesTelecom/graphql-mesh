@@ -43,7 +43,7 @@
     "@graphql-tools/utils": "^10.6.4",
     "@omnigraph/json-schema": "^0.108.9",
     "change-case": "^4.1.2",
-    "json-machete": "^0.97.5",
+    "@bouyguestelecom/graphql-json-machete": "^0.97.5",
     "openapi-types": "^12.1.0",
     "tslib": "^2.4.0"
   },

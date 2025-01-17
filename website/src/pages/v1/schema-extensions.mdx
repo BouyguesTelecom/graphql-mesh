@@ -173,7 +173,7 @@ To formalize this navigation within our supergraph, we can extend each type with
 will translate its respective key into an actual object association:
 
 ```ts filename="mesh.config.ts"
-import { defineConfig } from '@graphql-mesh/compose-cli'
+import { defineConfig } from '@bouygues-telecom/graphql-compose-cli'
 import { loadGraphQLHTTPSubgraph } from '@graphql-mesh/graphql'
 
 export const composeConfig = defineConfig({
@@ -208,7 +208,7 @@ However, these extensions alone won’t do anything until they have correspondin
 complete example would look like this:
 
 ```ts filename="mesh.config.ts"
-import { defineConfig } from '@graphql-mesh/compose-cli'
+import { defineConfig } from '@bouygues-telecom/graphql-compose-cli'
 import { loadGraphQLHTTPSubgraph } from '@graphql-mesh/graphql'
 
 export const composeConfig = defineConfig({
@@ -294,7 +294,7 @@ With this many-users query available, we can now delegate the `Post.user` field 
 many records:
 
 ```ts filename="mesh.config.ts"
-import { defineConfig } from '@graphql-mesh/compose-cli'
+import { defineConfig } from '@bouygues-telecom/graphql-compose-cli'
 import { loadGraphQLHTTPSubgraph } from '@graphql-mesh/graphql'
 
 export const composeConfig = defineConfig({
@@ -350,7 +350,7 @@ when you want to stitch subgraphs but you don't want to expose some extra fields
 exposed to the client.
 
 ```ts filename="mesh.config.ts"
-import { createFilterTransform, defineConfig } from '@graphql-mesh/compose-cli'
+import { createFilterTransform, defineConfig } from '@bouygues-telecom/graphql-compose-cli'
 import { loadGraphQLHTTPSubgraph } from '@graphql-mesh/graphql'
 
 export const composeConfig = defineConfig({

@@ -18,7 +18,7 @@
   - @graphql-mesh/config@0.106.13
   - @graphql-mesh/utils@0.103.9
   - @graphql-mesh/cli@0.98.13
-  - @graphql-mesh/compose-cli@1.3.2
+  - @bouygues-telecom/graphql-compose-cli@1.3.2
   - @graphql-mesh/types@0.103.9
 
 ## 1.4.4
@@ -52,7 +52,7 @@
 - Updated dependencies
   [[`93fb364`](https://github.com/ardatan/graphql-mesh/commit/93fb3643d90c52084725d79b586ace8ecd570911),
   [`93fb364`](https://github.com/ardatan/graphql-mesh/commit/93fb3643d90c52084725d79b586ace8ecd570911)]:
-  - @graphql-mesh/compose-cli@1.3.1
+  - @bouygues-telecom/graphql-compose-cli@1.3.1
   - @graphql-mesh/config@0.106.9
   - @graphql-mesh/cli@0.98.9
   - @graphql-mesh/utils@0.103.8
@@ -65,7 +65,7 @@
 - Updated dependencies
   [[`1a7adbf`](https://github.com/ardatan/graphql-mesh/commit/1a7adbf28f126c0fc8ba834f8a7db886f7fba876),
   [`1a7adbf`](https://github.com/ardatan/graphql-mesh/commit/1a7adbf28f126c0fc8ba834f8a7db886f7fba876)]:
-  - @graphql-mesh/compose-cli@1.3.0
+  - @bouygues-telecom/graphql-compose-cli@1.3.0
   - @graphql-mesh/config@0.106.8
   - @graphql-mesh/cli@0.98.8
   - @graphql-mesh/types@0.103.7
@@ -77,7 +77,7 @@
 
 - Updated dependencies
   [[`979530c`](https://github.com/ardatan/graphql-mesh/commit/979530c8ca5b6085ed0228911b9e820a5519b1f9)]:
-  - @graphql-mesh/compose-cli@1.2.14
+  - @bouygues-telecom/graphql-compose-cli@1.2.14
 
 ## 1.3.13
 
@@ -95,7 +95,7 @@
   [`2ef651a`](https://github.com/ardatan/graphql-mesh/commit/2ef651a8356b560478f1847399bad975a0c3f0b9),
   [`2ef651a`](https://github.com/ardatan/graphql-mesh/commit/2ef651a8356b560478f1847399bad975a0c3f0b9),
   [`2ef651a`](https://github.com/ardatan/graphql-mesh/commit/2ef651a8356b560478f1847399bad975a0c3f0b9)]:
-  - @graphql-mesh/compose-cli@1.2.13
+  - @bouygues-telecom/graphql-compose-cli@1.2.13
   - @graphql-mesh/config@0.106.7
   - @graphql-mesh/types@0.103.6
   - @graphql-mesh/utils@0.103.6
@@ -107,7 +107,7 @@
 
 - Updated dependencies
   [[`8c11020`](https://github.com/ardatan/graphql-mesh/commit/8c11020e3abe249ff2b067002e7f4d97c2921598)]:
-  - @graphql-mesh/compose-cli@1.2.12
+  - @bouygues-telecom/graphql-compose-cli@1.2.12
   - @graphql-mesh/config@0.106.6
   - @graphql-mesh/cli@0.98.6
 
@@ -116,28 +116,28 @@
 ### Patch Changes
 
 - Updated dependencies []:
-  - @graphql-mesh/compose-cli@1.2.11
+  - @bouygues-telecom/graphql-compose-cli@1.2.11
 
 ## 1.3.10
 
 ### Patch Changes
 
 - Updated dependencies []:
-  - @graphql-mesh/compose-cli@1.2.10
+  - @bouygues-telecom/graphql-compose-cli@1.2.10
 
 ## 1.3.9
 
 ### Patch Changes
 
 - Updated dependencies []:
-  - @graphql-mesh/compose-cli@1.2.9
+  - @bouygues-telecom/graphql-compose-cli@1.2.9
 
 ## 1.3.8
 
 ### Patch Changes
 
 - Updated dependencies []:
-  - @graphql-mesh/compose-cli@1.2.8
+  - @bouygues-telecom/graphql-compose-cli@1.2.8
 
 ## 1.3.7
 
@@ -148,7 +148,7 @@
   [`e92d4f8`](https://github.com/ardatan/graphql-mesh/commit/e92d4f8201b68ff0468fc8f6943d73071e61615d),
   [`9f9f6fe`](https://github.com/ardatan/graphql-mesh/commit/9f9f6fe61c74eaa6572866eddd97c348307107a8)]:
   - @graphql-mesh/cli@0.98.5
-  - @graphql-mesh/compose-cli@1.2.7
+  - @bouygues-telecom/graphql-compose-cli@1.2.7
   - @graphql-mesh/utils@0.103.5
   - @graphql-mesh/config@0.106.5
   - @graphql-mesh/types@0.103.5
@@ -160,7 +160,7 @@
 - Updated dependencies
   [[`8fcfe3f`](https://github.com/ardatan/graphql-mesh/commit/8fcfe3f78a0be53e3b474231bfe7ee0594e54f91)]:
   - @graphql-mesh/types@0.103.4
-  - @graphql-mesh/compose-cli@1.2.6
+  - @bouygues-telecom/graphql-compose-cli@1.2.6
   - @graphql-mesh/cli@0.98.4
   - @graphql-mesh/config@0.106.4
   - @graphql-mesh/utils@0.103.4
@@ -174,7 +174,7 @@
   - @graphql-mesh/utils@0.103.3
   - @graphql-mesh/cli@0.98.3
   - @graphql-mesh/config@0.106.3
-  - @graphql-mesh/compose-cli@1.2.5
+  - @bouygues-telecom/graphql-compose-cli@1.2.5
   - @graphql-mesh/types@0.103.3
 
 ## 1.3.4
@@ -186,7 +186,7 @@
   - @graphql-mesh/utils@0.103.2
   - @graphql-mesh/cli@0.98.2
   - @graphql-mesh/config@0.106.2
-  - @graphql-mesh/compose-cli@1.2.4
+  - @bouygues-telecom/graphql-compose-cli@1.2.4
   - @graphql-mesh/types@0.103.2
 
 ## 1.3.3
@@ -194,14 +194,14 @@
 ### Patch Changes
 
 - Updated dependencies []:
-  - @graphql-mesh/compose-cli@1.2.3
+  - @bouygues-telecom/graphql-compose-cli@1.2.3
 
 ## 1.3.2
 
 ### Patch Changes
 
 - Updated dependencies []:
-  - @graphql-mesh/compose-cli@1.2.2
+  - @bouygues-telecom/graphql-compose-cli@1.2.2
 
 ## 1.3.1
 
@@ -215,7 +215,7 @@
   [`92d3ce1`](https://github.com/ardatan/graphql-mesh/commit/92d3ce10bcfdb1bbf63165f77bdb5acd713c88ac),
   [`92d3ce1`](https://github.com/ardatan/graphql-mesh/commit/92d3ce10bcfdb1bbf63165f77bdb5acd713c88ac)]:
   - @graphql-mesh/cli@0.98.1
-  - @graphql-mesh/compose-cli@1.2.1
+  - @bouygues-telecom/graphql-compose-cli@1.2.1
   - @graphql-mesh/config@0.106.1
   - @graphql-mesh/types@0.103.1
   - @graphql-mesh/utils@0.103.1
@@ -228,7 +228,7 @@
   [[`0e49907`](https://github.com/ardatan/graphql-mesh/commit/0e49907cf19d91fe40c28237aa79bd55742b371f),
   [`9873b33`](https://github.com/ardatan/graphql-mesh/commit/9873b33f0cc6c3b3a3c3dc1a0a1cb18c827b8722)]:
   - @graphql-mesh/utils@0.103.0
-  - @graphql-mesh/compose-cli@1.2.0
+  - @bouygues-telecom/graphql-compose-cli@1.2.0
   - @graphql-mesh/cli@0.98.0
   - @graphql-mesh/config@0.106.0
   - @graphql-mesh/types@0.103.0
@@ -239,7 +239,7 @@
 
 - Updated dependencies
   [[`53b6870`](https://github.com/ardatan/graphql-mesh/commit/53b687064a8decec5a7458d73f9852c0629ae79f)]:
-  - @graphql-mesh/compose-cli@1.1.9
+  - @bouygues-telecom/graphql-compose-cli@1.1.9
   - @graphql-mesh/config@0.105.2
   - @graphql-mesh/cli@0.97.2
   - @graphql-mesh/types@0.102.13
@@ -253,7 +253,7 @@
   [[`eee53b9`](https://github.com/ardatan/graphql-mesh/commit/eee53b9f455653166c39bca627b3261fbefe4eb7),
   [`eee53b9`](https://github.com/ardatan/graphql-mesh/commit/eee53b9f455653166c39bca627b3261fbefe4eb7),
   [`eee53b9`](https://github.com/ardatan/graphql-mesh/commit/eee53b9f455653166c39bca627b3261fbefe4eb7)]:
-  - @graphql-mesh/compose-cli@1.1.8
+  - @bouygues-telecom/graphql-compose-cli@1.1.8
   - @graphql-mesh/config@0.105.1
   - @graphql-mesh/utils@0.102.12
   - @graphql-mesh/cli@0.97.1
@@ -272,7 +272,7 @@
 
 - Updated dependencies
   [[`56e7b60`](https://github.com/ardatan/graphql-mesh/commit/56e7b602ec8a17b52127eecb3457cf16e6030ae9)]:
-  - @graphql-mesh/compose-cli@1.1.7
+  - @bouygues-telecom/graphql-compose-cli@1.1.7
 
 ## 1.2.0
 
@@ -289,7 +289,7 @@
 ### Patch Changes
 
 - Updated dependencies []:
-  - @graphql-mesh/compose-cli@1.1.6
+  - @bouygues-telecom/graphql-compose-cli@1.1.6
   - @graphql-mesh/cli@0.96.12
 
 ## 1.1.6
@@ -309,7 +309,7 @@
   [`de41fc2`](https://github.com/ardatan/graphql-mesh/commit/de41fc2932433f8da35b9de9492720e6c8c100af)]:
   - @graphql-mesh/types@0.102.11
   - @graphql-mesh/utils@0.102.11
-  - @graphql-mesh/compose-cli@1.1.5
+  - @bouygues-telecom/graphql-compose-cli@1.1.5
   - @graphql-mesh/config@0.104.12
   - @graphql-mesh/cli@0.96.10
 
@@ -322,7 +322,7 @@
   [`997b81c`](https://github.com/ardatan/graphql-mesh/commit/997b81c8a5d28508057806b4f16eecc5b713cf71)]:
   - @graphql-mesh/types@0.102.10
   - @graphql-mesh/utils@0.102.10
-  - @graphql-mesh/compose-cli@1.1.4
+  - @bouygues-telecom/graphql-compose-cli@1.1.4
   - @graphql-mesh/config@0.104.11
   - @graphql-mesh/cli@0.96.9
 
@@ -334,7 +334,7 @@
   [[`fad4d27`](https://github.com/ardatan/graphql-mesh/commit/fad4d27bfebb80a374c2041b86ffab509845effe)]:
   - @graphql-mesh/config@0.104.10
   - @graphql-mesh/utils@0.102.9
-  - @graphql-mesh/compose-cli@1.1.3
+  - @bouygues-telecom/graphql-compose-cli@1.1.3
   - @graphql-mesh/cli@0.96.8
   - @graphql-mesh/types@0.102.9
 
@@ -347,7 +347,7 @@
   [`518c42c`](https://github.com/ardatan/graphql-mesh/commit/518c42c5a2bee00e224df95c2beb758a28d1323c)]:
   - @graphql-mesh/types@0.102.8
   - @graphql-mesh/utils@0.102.8
-  - @graphql-mesh/compose-cli@1.1.2
+  - @bouygues-telecom/graphql-compose-cli@1.1.2
   - @graphql-mesh/config@0.104.9
   - @graphql-mesh/cli@0.96.7
 
@@ -363,7 +363,7 @@
   [`50bf472`](https://github.com/ardatan/graphql-mesh/commit/50bf4723657d27dc196d80407bda40c93aa5c9be),
   [`50bf472`](https://github.com/ardatan/graphql-mesh/commit/50bf4723657d27dc196d80407bda40c93aa5c9be)]:
   - @graphql-mesh/cli@0.96.6
-  - @graphql-mesh/compose-cli@1.1.1
+  - @bouygues-telecom/graphql-compose-cli@1.1.1
   - @graphql-mesh/config@0.104.8
   - @graphql-mesh/types@0.102.7
   - @graphql-mesh/utils@0.102.7
@@ -374,7 +374,7 @@
 
 - Updated dependencies
   [[`c8b1309`](https://github.com/ardatan/graphql-mesh/commit/c8b1309a707c358dc446799a986c99e120767d0e)]:
-  - @graphql-mesh/compose-cli@1.1.0
+  - @bouygues-telecom/graphql-compose-cli@1.1.0
 
 ## 1.0.4
 
@@ -385,7 +385,7 @@
   [`900e84c`](https://github.com/ardatan/graphql-mesh/commit/900e84c9846f84e84746860cf3f1c4724e64f377)]:
   - @graphql-mesh/utils@0.102.6
   - @graphql-mesh/cli@0.96.5
-  - @graphql-mesh/compose-cli@1.0.4
+  - @bouygues-telecom/graphql-compose-cli@1.0.4
   - @graphql-mesh/config@0.104.7
   - @graphql-mesh/types@0.102.6
 
@@ -394,21 +394,21 @@
 ### Patch Changes
 
 - Updated dependencies []:
-  - @graphql-mesh/compose-cli@1.0.3
+  - @bouygues-telecom/graphql-compose-cli@1.0.3
 
 ## 1.0.2
 
 ### Patch Changes
 
 - Updated dependencies []:
-  - @graphql-mesh/compose-cli@1.0.2
+  - @bouygues-telecom/graphql-compose-cli@1.0.2
 
 ## 1.0.1
 
 ### Patch Changes
 
 - Updated dependencies []:
-  - @graphql-mesh/compose-cli@1.0.1
+  - @bouygues-telecom/graphql-compose-cli@1.0.1
   - @graphql-mesh/cli@0.96.4
 
 ## 1.0.0
@@ -423,4 +423,4 @@
   [[`fd245f2`](https://github.com/ardatan/graphql-mesh/commit/fd245f2619346667038d3fcce9aa097994368815),
   [`b822c26`](https://github.com/ardatan/graphql-mesh/commit/b822c268b0bab3a91b3ebeed3eca90a9810b5778)]:
   - @graphql-mesh/cli@0.96.3
-  - @graphql-mesh/compose-cli@1.0.0
+  - @bouygues-telecom/graphql-compose-cli@1.0.0

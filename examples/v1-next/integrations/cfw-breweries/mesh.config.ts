@@ -1,5 +1,5 @@
 import { OperationTypeNode } from 'graphql';
-import { defineConfig } from '@graphql-mesh/compose-cli';
+import { defineConfig } from '@bouygues-telecom/graphql-compose-cli';
 import { loadJSONSchemaSubgraph } from '@omnigraph/json-schema';
 
 export const composeConfig = defineConfig({

@@ -14,7 +14,7 @@ If you want to load a remote GraphQL subgraph by introspecting the endpoint, you
 `endpoint` in the configuration like below;
 
 ```ts filename="mesh-config.ts"
-import { defineConfig, loadGraphQLHTTPSubgraph } from '@graphql-mesh/compose-cli'
+import { defineConfig, loadGraphQLHTTPSubgraph } from '@bouygues-telecom/graphql-compose-cli'
 
 export const composeConfig = defineConfig({
   subgraphs: [
@@ -36,7 +36,7 @@ In this case, Mesh will take the schema from `source`, but execute the operation
 `endpoint`.
 
 ```ts filename="mesh-config.ts" {9}
-import { defineConfig, loadGraphQLHTTPSubgraph } from '@graphql-mesh/compose-cli'
+import { defineConfig, loadGraphQLHTTPSubgraph } from '@bouygues-telecom/graphql-compose-cli'
 
 export const composeConfig = defineConfig({
   subgraphs: [
@@ -79,7 +79,7 @@ The `retry` mechanism allow you to specify the retry attempts for a single Graph
 The retry flow will execute in both conditions: a network error, or due to a runtime error.
 
 ```ts filename="mesh-config.ts" {9}
-import { defineConfig, loadGraphQLHTTPSubgraph } from '@graphql-mesh/compose-cli'
+import { defineConfig, loadGraphQLHTTPSubgraph } from '@bouygues-telecom/graphql-compose-cli'
 
 export const composeConfig = defineConfig({
   subgraphs: [
@@ -102,7 +102,7 @@ export const composeConfig = defineConfig({
 The `timeout` mechanism allow you to specify the `timeout` for a given GraphQL endpoint.
 
 ```ts filename="mesh-config.ts" {9}
-import { defineConfig, loadGraphQLHTTPSubgraph } from '@graphql-mesh/compose-cli'
+import { defineConfig, loadGraphQLHTTPSubgraph } from '@bouygues-telecom/graphql-compose-cli'
 
 export const composeConfig = defineConfig({
   subgraphs: [
@@ -128,7 +128,7 @@ source.
 This is helpful if you have a fallback endpoint for the same GraphQL API.
 
 ```ts filename="mesh-config.ts" {7-17}
-import { defineConfig, loadGraphQLHTTPSubgraph } from '@graphql-mesh/compose-cli'
+import { defineConfig, loadGraphQLHTTPSubgraph } from '@bouygues-telecom/graphql-compose-cli'
 
 export const composeConfig = defineConfig({
   subgraphs: [
@@ -163,7 +163,7 @@ If you have different places that service is deployed, this is useful to get the
 racing them.
 
 ```ts filename="mesh-config.ts" {7-15}
-import { defineConfig, loadGraphQLHTTPSubgraph } from '@graphql-mesh/compose-cli'
+import { defineConfig, loadGraphQLHTTPSubgraph } from '@bouygues-telecom/graphql-compose-cli'
 
 export const composeConfig = defineConfig({
   subgraphs: [

@@ -1,5 +1,5 @@
 import { GraphQLObjectType, GraphQLSchema, GraphQLString } from 'graphql';
-import { defineConfig } from '@graphql-mesh/compose-cli';
+import { defineConfig } from '@bouygues-telecom/graphql-compose-cli';
 
 export const composeConfig = defineConfig({
   subgraphs: [

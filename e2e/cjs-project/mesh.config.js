@@ -1,5 +1,5 @@
 const { GraphQLSchema, GraphQLObjectType, GraphQLString } = require('graphql');
-const { defineConfig } = require('@graphql-mesh/compose-cli');
+const { defineConfig } = require('@bouygues-telecom/graphql-compose-cli');
 
 const composeConfig = defineConfig({
   subgraphs: [

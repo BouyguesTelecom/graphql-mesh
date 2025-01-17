@@ -1,4 +1,4 @@
-# @graphql-mesh/compose-cli
+# @bouygues-telecom/graphql-compose-cli
 
 ## 1.3.2
 
@@ -1067,7 +1067,7 @@
 
   ```diff
   import { GraphQLObjectType, GraphQLSchema, GraphQLString } from 'graphql';
-  import { defineConfig } from '@graphql-mesh/compose-cli';
+  import { defineConfig } from '@bouygues-telecom/graphql-compose-cli';
 
   export const composeConfig = defineConfig({
   - target: 'fusiongraph.graphql',

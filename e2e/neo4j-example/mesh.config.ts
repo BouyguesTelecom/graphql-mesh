@@ -1,5 +1,5 @@
 import { Opts } from '@e2e/opts';
-import { defineConfig } from '@graphql-mesh/compose-cli';
+import { defineConfig } from '@bouygues-telecom/graphql-compose-cli';
 import { loadNeo4JSubgraph } from '@omnigraph/neo4j';
 
 const opts = Opts(process.argv);

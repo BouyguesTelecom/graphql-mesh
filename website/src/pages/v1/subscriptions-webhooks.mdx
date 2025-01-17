@@ -22,7 +22,7 @@ If you subscribe a pubSub topic with `webhook:EXPECTED_METHOD:EXPECTED_PATH`, th
 automatically bind that path to that topic.
 
 ```ts filename="mesh.config.ts"
-import { defineConfig as defineComposeConfig } from '@graphql-mesh/compose-cli'
+import { defineConfig as defineComposeConfig } from '@bouygues-telecom/graphql-compose-cli'
 
 export const composeConfig = defineComposeConfig({
   additionalTypeDefs: /* GraphQL */ `
@@ -63,7 +63,7 @@ definition. You can generate GraphQL type definitions from sample JSON response;
 Just add the following to your existing JSON schema handler configuration in `.meshrc.yml` file;
 
 ```ts filename="mesh.config.ts"
-import { defineConfig as defineComposeConfig } from '@graphql-mesh/compose-cli'
+import { defineConfig as defineComposeConfig } from '@bouygues-telecom/graphql-compose-cli'
 import { loadJSONSchemaSubgraph } from '@omnigraph/json-schema'
 
 export const composeConfig = defineComposeConfig({

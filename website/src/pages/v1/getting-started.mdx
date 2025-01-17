@@ -33,7 +33,7 @@ Full overview of Mesh Compose features:
 your favorite package manager:
 
 ```sh npm2yarn
-npm i @graphql-mesh/compose-cli
+npm i @bouygues-telecom/graphql-compose-cli
 ```
 
 ## Compose Configuration
@@ -52,7 +52,7 @@ This example loads a GraphQL subgraph from the [Countries API](https://countries
 Then the compose configuration should be exported as `composeConfig`.
 
 ```ts filename="mesh.config.ts"
-import { defineConfig, loadGraphQLHTTPSubgraph } from '@graphql-mesh/compose-cli'
+import { defineConfig, loadGraphQLHTTPSubgraph } from '@bouygues-telecom/graphql-compose-cli'
 
 export const composeConfig = defineConfig({
   subgraphs: [
@@ -98,7 +98,7 @@ import {
   createPrefixTransform,
   defineConfig,
   loadGraphQLHTTPSubgraph
-} from '@graphql-mesh/compose-cli'
+} from '@bouygues-telecom/graphql-compose-cli'
 
 export const composeConfig = defineConfig({
   subgraphs: [

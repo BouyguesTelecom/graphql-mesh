@@ -4,7 +4,7 @@ import {
   createRenameTypeTransform,
   defineConfig,
   loadGraphQLHTTPSubgraph,
-} from '@graphql-mesh/compose-cli';
+} from '@bouygues-telecom/graphql-compose-cli';
 
 const opts = Opts(process.argv);
 

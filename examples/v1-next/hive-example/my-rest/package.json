@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@graphql-hive/cli": "0.44.4",
-    "@graphql-mesh/compose-cli": "workspace:*",
+    "@bouygues-telecom/graphql-compose-cli": "workspace:*",
     "@omnigraph/openapi": "workspace:*",
     "fets": "0.8.4",
     "graphql": "16.10.0"

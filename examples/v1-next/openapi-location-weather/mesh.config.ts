@@ -2,7 +2,7 @@ import { defineConfig as defineGatewayConfig } from '@graphql-hive/gateway';
 import {
   createRenameTypeTransform,
   defineConfig as defineComposeConfig,
-} from '@graphql-mesh/compose-cli';
+} from '@bouygues-telecom/graphql-compose-cli';
 import { loadOpenAPISubgraph } from '@omnigraph/openapi';
 
 export const composeConfig = defineComposeConfig({

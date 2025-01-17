@@ -1,4 +1,4 @@
-# json-machete
+# @bouyguestelecom/graphql-json-machete
 
 ## 0.97.5
 
@@ -1791,8 +1791,8 @@
 
 ### Patch Changes
 
-- 331b62637: fix(json-machete): Heal generated schemas
-- 331b62637: fix(json-machete): if anyOf/oneOf/allOf is singular, use that single value directly
+- 331b62637: fix(@bouyguestelecom/graphql-json-machete): Heal generated schemas
+- 331b62637: fix(@bouyguestelecom/graphql-json-machete): if anyOf/oneOf/allOf is singular, use that single value directly
 - Updated dependencies [f963b57ce]
 - Updated dependencies [0644f31f2]
 - Updated dependencies [331b62637]
@@ -1832,13 +1832,13 @@
 
 ### Patch Changes
 
-- d64c74b75: fix(json-machete): ignore null values in dereferenceObject
+- d64c74b75: fix(@bouyguestelecom/graphql-json-machete): ignore null values in dereferenceObject
 
 ## 0.7.7
 
 ### Patch Changes
 
-- 114629e47: fix(json-machete): respect int64 types
+- 114629e47: fix(@bouyguestelecom/graphql-json-machete): respect int64 types
   - @graphql-mesh/utils@0.33.2
 
 ## 0.7.6
@@ -1866,13 +1866,13 @@
 
 ### Patch Changes
 
-- c53203723: fix(json-machete): revert old behavior
+- c53203723: fix(@bouyguestelecom/graphql-json-machete): revert old behavior
 
 ## 0.7.2
 
 ### Patch Changes
 
-- c6f0314ac: fix(json-machete): use util back
+- c6f0314ac: fix(@bouyguestelecom/graphql-json-machete): use util back
 
 ## 0.7.1
 
@@ -1902,7 +1902,7 @@
 
 ### Minor Changes
 
-- b45dac0c0: feat(json-machete): add missing format if example is provided
+- b45dac0c0: feat(@bouyguestelecom/graphql-json-machete): add missing format if example is provided
 
 ## 0.5.20
 
@@ -1989,7 +1989,7 @@
 
 ### Patch Changes
 
-- ca6bb5ff3: fix(json-machete): respect items prop in object type
+- ca6bb5ff3: fix(@bouyguestelecom/graphql-json-machete): respect items prop in object type
 - Updated dependencies [ca6bb5ff3]
   - @graphql-mesh/utils@0.27.7
 
@@ -2042,7 +2042,7 @@
 
 ### Minor Changes
 
-- 49e9ca808: feat(json-machete): trim descriptions
+- 49e9ca808: feat(@bouyguestelecom/graphql-json-machete): trim descriptions
 
 ## 0.4.3
 
@@ -2067,7 +2067,7 @@
 
 ### Minor Changes
 
-- 020431bdc: enhance(json-machete): do not look for annotated schemas
+- 020431bdc: enhance(@bouyguestelecom/graphql-json-machete): do not look for annotated schemas
 
 ### Patch Changes
 
@@ -2084,7 +2084,7 @@
 
 ### Patch Changes
 
-- 92d687133: fix(json-machete): respect reference titles while dereferencing
+- 92d687133: fix(@bouyguestelecom/graphql-json-machete): respect reference titles while dereferencing
 
 ## 0.3.5
 
@@ -2106,7 +2106,7 @@
 
 ### Patch Changes
 
-- d907351c5: fix(json-machete): respect object.items pattern
+- d907351c5: fix(@bouyguestelecom/graphql-json-machete): respect object.items pattern
 - d907351c5: new OpenAPI Handler
 - Updated dependencies [d907351c5]
   - @graphql-mesh/utils@0.24.2
@@ -2172,14 +2172,14 @@
 
 ### Patch Changes
 
-- 3bded2bad: fix(json-machete): stringify circular objects correctly to compare for deduplicating
+- 3bded2bad: fix(@bouyguestelecom/graphql-json-machete): stringify circular objects correctly to compare for deduplicating
   schema
 
 ## 0.0.26
 
 ### Patch Changes
 
-- 8de12b4d8: fix(json-machete): dereference imported json files correctly
+- 8de12b4d8: fix(@bouyguestelecom/graphql-json-machete): dereference imported json files correctly
 
 ## 0.0.25
 

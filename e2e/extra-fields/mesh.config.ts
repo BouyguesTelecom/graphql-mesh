@@ -1,5 +1,5 @@
 import { Opts } from '@e2e/opts';
-import { defineConfig, loadGraphQLHTTPSubgraph } from '@graphql-mesh/compose-cli';
+import { defineConfig, loadGraphQLHTTPSubgraph } from '@bouygues-telecom/graphql-compose-cli';
 
 const opts = Opts(process.argv);
 

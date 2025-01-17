@@ -24,7 +24,7 @@ npm i @omnigraph/json-schema
 Now, you can use it directly in your Mesh config file:
 
 ```ts filename="mesh.config.ts" {2,7-18}
-import { defineConfig } from '@graphql-mesh/compose-cli'
+import { defineConfig } from '@bouygues-telecom/graphql-compose-cli'
 import { loadJSONSchemaSubgraph } from '@omnigraph/json-schema'
 
 export const composeConfig = defineConfig({
@@ -61,7 +61,7 @@ export const composeConfig = defineConfig({
 Mesh automatically generates arguments for operations if needed;
 
 ```ts filename="mesh.config.ts" {13}
-import { defineConfig } from '@graphql-mesh/compose-cli'
+import { defineConfig } from '@bouygues-telecom/graphql-compose-cli'
 import { loadJSONSchemaSubgraph } from '@omnigraph/json-schema'
 
 export const composeConfig = defineConfig({
@@ -95,7 +95,7 @@ project root, and put the JSON samples there
 declaring the `responseSample`, you can use the JSON sample in the GraphQL schema.
 
 ```ts filename="mesh.config.ts" {13}
-import { defineConfig } from '@graphql-mesh/compose-cli'
+import { defineConfig } from '@bouygues-telecom/graphql-compose-cli'
 import { loadJSONSchemaSubgraph } from '@omnigraph/json-schema'
 
 export const composeConfig = defineConfig({
@@ -139,7 +139,7 @@ Mesh automatically generates arguments for operations if needed. Note that the a
 generated as nullable strings by default.
 
 ```ts filename="mesh.config.ts" {13}
-import { defineConfig } from '@graphql-mesh/compose-cli'
+import { defineConfig } from '@bouygues-telecom/graphql-compose-cli'
 import { loadJSONSchemaSubgraph } from '@omnigraph/json-schema'
 
 export const composeConfig = defineConfig({
@@ -169,7 +169,7 @@ You can use the JSON samples to define the query parameters.
 In this example we declare `limit` and `offset` properties:
 
 ```ts filename="mesh.config.ts" {15}
-import { defineConfig } from '@graphql-mesh/compose-cli'
+import { defineConfig } from '@bouygues-telecom/graphql-compose-cli'
 import { loadJSONSchemaSubgraph } from '@omnigraph/json-schema'
 
 export const composeConfig = defineConfig({
@@ -274,7 +274,7 @@ queryParamArgMap: {
 And here is the final config:
 
 ```ts filename="mesh.config.ts" {17-33}
-import { defineConfig } from '@graphql-mesh/compose-cli'
+import { defineConfig } from '@bouygues-telecom/graphql-compose-cli'
 import { loadJSONSchemaSubgraph } from '@omnigraph/json-schema'
 
 export const composeConfig = defineConfig({
@@ -322,7 +322,7 @@ In this example we declare `limit` parameter with the default value of `10`, and
 dynamic value taken from the environment:
 
 ```ts filename="mesh.config.ts" {12-15}
-import { defineConfig } from '@graphql-mesh/compose-cli'
+import { defineConfig } from '@bouygues-telecom/graphql-compose-cli'
 import { loadJSONSchemaSubgraph } from '@omnigraph/json-schema'
 
 export const composeConfig = defineConfig({

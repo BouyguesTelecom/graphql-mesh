@@ -1,5 +1,5 @@
-import type { JSONSchemaObject } from 'json-machete';
-import { dereferenceObject, healJSONSchema } from 'json-machete';
+import type { JSONSchemaObject } from '@bouyguestelecom/graphql-json-machete';
+import { dereferenceObject, healJSONSchema } from '@bouyguestelecom/graphql-json-machete';
 import { process } from '@graphql-mesh/cross-helpers';
 import { getInterpolatedHeadersFactory } from '@graphql-mesh/string-interpolation';
 import type { Logger, MeshFetch } from '@graphql-mesh/types';

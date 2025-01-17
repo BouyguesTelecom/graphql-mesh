@@ -62,7 +62,7 @@
     [`@omnigraph/json-schema@^0.108.7` ↗︎](https://www.npmjs.com/package/@omnigraph/json-schema/v/0.108.7)
     (from `workspace:^`, in `dependencies`)
   - Updated dependency
-    [`json-machete@^0.97.5` ↗︎](https://www.npmjs.com/package/json-machete/v/0.97.5) (from
+    [`@bouyguestelecom/graphql-json-machete@^0.97.5` ↗︎](https://www.npmjs.com/package/@bouyguestelecom/graphql-json-machete/v/0.97.5) (from
     `workspace:^`, in `dependencies`)
 - Updated dependencies
   [[`93fb364`](https://github.com/ardatan/graphql-mesh/commit/93fb3643d90c52084725d79b586ace8ecd570911)]:
@@ -138,7 +138,7 @@
   - @graphql-mesh/types@0.103.6
   - @graphql-mesh/utils@0.103.6
   - @omnigraph/json-schema@0.108.6
-  - json-machete@0.97.5
+  - @bouyguestelecom/graphql-json-machete@0.97.5
 
 ## 0.108.5
 
@@ -533,7 +533,7 @@
   - @graphql-mesh/types@0.100.0
   - @graphql-mesh/utils@0.100.0
   - @omnigraph/json-schema@0.104.0
-  - json-machete@0.97.4
+  - @bouyguestelecom/graphql-json-machete@0.97.4
 
 ## 0.103.2
 
@@ -990,7 +990,7 @@
   [[`234d2f9`](https://github.com/ardatan/graphql-mesh/commit/234d2f9d390bd340b0f7bcdb8f335334ff5f60b9),
   [`234d2f9`](https://github.com/ardatan/graphql-mesh/commit/234d2f9d390bd340b0f7bcdb8f335334ff5f60b9)]:
   - @omnigraph/json-schema@0.100.5
-  - json-machete@0.97.3
+  - @bouyguestelecom/graphql-json-machete@0.97.3
 
 ## 0.100.5
 
@@ -1068,7 +1068,7 @@
   - @graphql-mesh/types@0.98.0
   - @graphql-mesh/utils@0.98.0
   - @omnigraph/json-schema@0.100.0
-  - json-machete@0.97.2
+  - @bouyguestelecom/graphql-json-machete@0.97.2
 
 ## 0.99.6
 
@@ -1249,7 +1249,7 @@
   [`e6c7fde`](https://github.com/ardatan/graphql-mesh/commit/e6c7fde5b4aec4427beee91b9e9c444d99a9ece1),
   [`a665baf`](https://github.com/ardatan/graphql-mesh/commit/a665baf90376cbdb552c7cabbb5e90e856c24fd1)]:
   - @omnigraph/json-schema@0.97.1
-  - json-machete@0.97.1
+  - @bouyguestelecom/graphql-json-machete@0.97.1
   - @graphql-mesh/types@0.96.1
   - @graphql-mesh/utils@0.96.1
 
@@ -1261,7 +1261,7 @@
   [[`7909bcb8c`](https://github.com/ardatan/graphql-mesh/commit/7909bcb8cbae5d1449f242b1da86e143760ab517),
   [`47a50aa6d`](https://github.com/ardatan/graphql-mesh/commit/47a50aa6d1a1bb9766f0895b206756741c0f6769)]:
   - @omnigraph/json-schema@0.97.0
-  - json-machete@0.97.0
+  - @bouyguestelecom/graphql-json-machete@0.97.0
 
 ## 0.96.0
 
@@ -1271,7 +1271,7 @@
   [[`5c6a8f784`](https://github.com/ardatan/graphql-mesh/commit/5c6a8f784a787641b90349e584b49de629cc41ff)]:
   - @omnigraph/json-schema@0.96.0
   - @graphql-mesh/types@0.96.0
-  - json-machete@0.96.0
+  - @bouyguestelecom/graphql-json-machete@0.96.0
   - @graphql-mesh/utils@0.96.0
 
 ## 0.95.12
@@ -1284,7 +1284,7 @@
   - @omnigraph/json-schema@0.95.12
   - @graphql-mesh/string-interpolation@0.5.3
   - @graphql-mesh/utils@0.95.8
-  - json-machete@0.95.8
+  - @bouyguestelecom/graphql-json-machete@0.95.8
   - @graphql-mesh/types@0.95.8
 
 ## 0.95.11
@@ -1323,7 +1323,7 @@
   [[`a13969c77`](https://github.com/Urigo/graphql-mesh/commit/a13969c77794c44493d7a9426be7e38a6d673c88)]:
   - @omnigraph/json-schema@0.95.8
   - @graphql-mesh/types@0.95.7
-  - json-machete@0.95.7
+  - @bouyguestelecom/graphql-json-machete@0.95.7
   - @graphql-mesh/utils@0.95.7
 
 ## 0.95.7
@@ -1335,7 +1335,7 @@
   - @graphql-mesh/string-interpolation@0.5.2
   - @omnigraph/json-schema@0.95.7
   - @graphql-mesh/utils@0.95.6
-  - json-machete@0.95.6
+  - @bouyguestelecom/graphql-json-machete@0.95.6
   - @graphql-mesh/types@0.95.6
 
 ## 0.95.6
@@ -1347,7 +1347,7 @@
   [`b8f16a42b`](https://github.com/Urigo/graphql-mesh/commit/b8f16a42bf599723c2e311c47e74f812c6d1b781)]:
   - @graphql-mesh/cross-helpers@0.4.1
   - @graphql-mesh/types@0.95.5
-  - json-machete@0.95.5
+  - @bouyguestelecom/graphql-json-machete@0.95.5
   - @omnigraph/json-schema@0.95.6
   - @graphql-mesh/utils@0.95.5
 
@@ -1358,7 +1358,7 @@
 - Updated dependencies
   [[`625e5d787`](https://github.com/Urigo/graphql-mesh/commit/625e5d7878d44abd7c9d1542bf5cdcd4e37e2411)]:
   - @graphql-mesh/types@0.95.4
-  - json-machete@0.95.4
+  - @bouyguestelecom/graphql-json-machete@0.95.4
   - @omnigraph/json-schema@0.95.5
   - @graphql-mesh/utils@0.95.4
 
@@ -1370,7 +1370,7 @@
   [[`33ae7a89a`](https://github.com/Urigo/graphql-mesh/commit/33ae7a89a13f40ebbe0a01620e378fe4a914df7f)]:
   - @graphql-mesh/types@0.95.3
   - @graphql-mesh/utils@0.95.3
-  - json-machete@0.95.3
+  - @bouyguestelecom/graphql-json-machete@0.95.3
   - @omnigraph/json-schema@0.95.4
 
 ## 0.95.3
@@ -1392,7 +1392,7 @@
 - Updated dependencies
   [[`d8da4b282`](https://github.com/Urigo/graphql-mesh/commit/d8da4b282ab15ab6d0ea24c78c172e31fa1170ea)]:
   - @graphql-mesh/types@0.95.2
-  - json-machete@0.95.2
+  - @bouyguestelecom/graphql-json-machete@0.95.2
   - @omnigraph/json-schema@0.95.2
   - @graphql-mesh/utils@0.95.2
 
@@ -1403,7 +1403,7 @@
 - Updated dependencies
   [[`7cdc69e04`](https://github.com/Urigo/graphql-mesh/commit/7cdc69e0454ab99ea5c3b8072ac28da8f81a8796)]:
   - @graphql-mesh/types@0.95.1
-  - json-machete@0.95.1
+  - @bouyguestelecom/graphql-json-machete@0.95.1
   - @omnigraph/json-schema@0.95.1
   - @graphql-mesh/utils@0.95.1
 
@@ -1414,7 +1414,7 @@
 - Updated dependencies
   [[`bb50c4f94`](https://github.com/Urigo/graphql-mesh/commit/bb50c4f941caa59d69186d1415dce5773596e8bc)]:
   - @graphql-mesh/types@0.95.0
-  - json-machete@0.95.0
+  - @bouyguestelecom/graphql-json-machete@0.95.0
   - @omnigraph/json-schema@0.95.0
   - @graphql-mesh/utils@0.95.0
 
@@ -1427,7 +1427,7 @@
   [`d1310cdff`](https://github.com/Urigo/graphql-mesh/commit/d1310cdff53c53d5342e28b7c0c1af1dd25c6c75)]:
   - @omnigraph/json-schema@0.94.9
   - @graphql-mesh/utils@0.94.6
-  - json-machete@0.94.6
+  - @bouyguestelecom/graphql-json-machete@0.94.6
   - @graphql-mesh/types@0.94.6
 
 ## 0.94.9
@@ -1437,7 +1437,7 @@
 - Updated dependencies
   [[`f11e9b307`](https://github.com/Urigo/graphql-mesh/commit/f11e9b307f1336d5ead9a75befdb61de963c6c5b)]:
   - @graphql-mesh/utils@0.94.5
-  - json-machete@0.94.5
+  - @bouyguestelecom/graphql-json-machete@0.94.5
   - @omnigraph/json-schema@0.94.8
   - @graphql-mesh/types@0.94.5
 
@@ -1448,7 +1448,7 @@
 - Updated dependencies
   [[`ff1678eea`](https://github.com/Urigo/graphql-mesh/commit/ff1678eeabec67edaa4991b938ef81437cd9361e)]:
   - @graphql-mesh/types@0.94.4
-  - json-machete@0.94.4
+  - @bouyguestelecom/graphql-json-machete@0.94.4
   - @omnigraph/json-schema@0.94.7
   - @graphql-mesh/utils@0.94.4
 
@@ -1461,7 +1461,7 @@
   - @graphql-mesh/string-interpolation@0.5.1
   - @omnigraph/json-schema@0.94.6
   - @graphql-mesh/utils@0.94.3
-  - json-machete@0.94.3
+  - @bouyguestelecom/graphql-json-machete@0.94.3
   - @graphql-mesh/types@0.94.3
 
 ## 0.94.6
@@ -1471,7 +1471,7 @@
 - Updated dependencies
   [[`d0d4917f4`](https://github.com/Urigo/graphql-mesh/commit/d0d4917f405d7d6acfba62abef38909e1398ce7c)]:
   - @graphql-mesh/types@0.94.2
-  - json-machete@0.94.2
+  - @bouyguestelecom/graphql-json-machete@0.94.2
   - @omnigraph/json-schema@0.94.5
   - @graphql-mesh/utils@0.94.2
 
@@ -1481,7 +1481,7 @@
 
 - Updated dependencies []:
   - @graphql-mesh/types@0.94.1
-  - json-machete@0.94.1
+  - @bouyguestelecom/graphql-json-machete@0.94.1
   - @omnigraph/json-schema@0.94.4
   - @graphql-mesh/utils@0.94.1
 
@@ -1571,7 +1571,7 @@
   - @graphql-mesh/types@0.94.0
   - @graphql-mesh/utils@0.94.0
   - @omnigraph/json-schema@0.94.0
-  - json-machete@0.94.0
+  - @bouyguestelecom/graphql-json-machete@0.94.0
 
 ## 0.93.2
 
@@ -1604,7 +1604,7 @@
     [`@omnigraph/json-schema@^0.93.0` ↗︎](https://www.npmjs.com/package/@omnigraph/json-schema/v/0.93.0)
     (from `^1.0.0`, in `dependencies`)
   - Updated dependency
-    [`json-machete@^0.93.0` ↗︎](https://www.npmjs.com/package/json-machete/v/0.93.0) (from
+    [`@bouyguestelecom/graphql-json-machete@^0.93.0` ↗︎](https://www.npmjs.com/package/@bouyguestelecom/graphql-json-machete/v/0.93.0) (from
     `^1.0.0`, in `dependencies`)
   - Updated dependency
     [`@graphql-mesh/types@^0.93.0` ↗︎](https://www.npmjs.com/package/@graphql-mesh/types/v/0.93.0)
@@ -1620,7 +1620,7 @@
   - @graphql-mesh/types@0.93.1
   - @graphql-mesh/utils@0.93.1
   - @omnigraph/json-schema@0.93.1
-  - json-machete@0.93.1
+  - @bouyguestelecom/graphql-json-machete@0.93.1
 
 ## 1.0.0
 
@@ -1637,7 +1637,7 @@
   [`a597261db`](https://github.com/Urigo/graphql-mesh/commit/a597261dbb4f18c47bf7323695e853950ae500df)]:
   - @graphql-mesh/types@1.0.0
   - @graphql-mesh/utils@1.0.0
-  - json-machete@1.0.0
+  - @bouyguestelecom/graphql-json-machete@1.0.0
   - @omnigraph/json-schema@1.0.0
 
 ## 0.19.27
@@ -1673,7 +1673,7 @@
   - @graphql-mesh/string-interpolation@0.4.3
   - @omnigraph/json-schema@0.38.24
   - @graphql-mesh/cross-helpers@0.3.4
-  - json-machete@0.18.20
+  - @bouyguestelecom/graphql-json-machete@0.18.20
   - @graphql-mesh/types@0.91.12
   - @graphql-mesh/utils@0.43.20
 
@@ -1686,7 +1686,7 @@
   [`7e7096695`](https://github.com/Urigo/graphql-mesh/commit/7e709669564fa427332b8af00bc66234485f3d54)]:
   - @graphql-mesh/types@0.91.11
   - @omnigraph/json-schema@0.38.23
-  - json-machete@0.18.19
+  - @bouyguestelecom/graphql-json-machete@0.18.19
   - @graphql-mesh/utils@0.43.19
 
 ## 0.19.24
@@ -1699,7 +1699,7 @@
   [`3f658a771`](https://github.com/Urigo/graphql-mesh/commit/3f658a7711cd68bc7451c1494699c5ffb8e919ce)]:
   - @omnigraph/json-schema@0.38.22
   - @graphql-mesh/utils@0.43.18
-  - json-machete@0.18.18
+  - @bouyguestelecom/graphql-json-machete@0.18.18
   - @graphql-mesh/types@0.91.10
 
 ## 0.19.23
@@ -1709,7 +1709,7 @@
 - Updated dependencies
   [[`a272fdbca`](https://github.com/Urigo/graphql-mesh/commit/a272fdbca655b17119fb1dcb1c44498f387b1edc)]:
   - @graphql-mesh/types@0.91.9
-  - json-machete@0.18.17
+  - @bouyguestelecom/graphql-json-machete@0.18.17
   - @omnigraph/json-schema@0.38.21
   - @graphql-mesh/utils@0.43.17
 
@@ -1719,7 +1719,7 @@
 
 - Updated dependencies []:
   - @graphql-mesh/types@0.91.8
-  - json-machete@0.18.16
+  - @bouyguestelecom/graphql-json-machete@0.18.16
   - @omnigraph/json-schema@0.38.20
   - @graphql-mesh/utils@0.43.16
 
@@ -1746,7 +1746,7 @@
 - Updated dependencies
   [[`fa2c010c1`](https://github.com/Urigo/graphql-mesh/commit/fa2c010c13f95ce401c345a1330d8fddabeebc17)]:
   - @graphql-mesh/utils@0.43.15
-  - json-machete@0.18.15
+  - @bouyguestelecom/graphql-json-machete@0.18.15
   - @omnigraph/json-schema@0.38.17
   - @graphql-mesh/types@0.91.7
 
@@ -1759,7 +1759,7 @@
   [`0b438c329`](https://github.com/Urigo/graphql-mesh/commit/0b438c32950f524db65163d67f6a64f451214391)]:
   - @graphql-mesh/types@0.91.6
   - @graphql-mesh/utils@0.43.14
-  - json-machete@0.18.14
+  - @bouyguestelecom/graphql-json-machete@0.18.14
   - @omnigraph/json-schema@0.38.16
 
 ## 0.19.17
@@ -1777,7 +1777,7 @@
 - Updated dependencies
   [[`5c19f8d6f`](https://github.com/Urigo/graphql-mesh/commit/5c19f8d6f79f2d9bfbeb6458c8dc7a1729c37db9)]:
   - @graphql-mesh/types@0.91.5
-  - json-machete@0.18.13
+  - @bouyguestelecom/graphql-json-machete@0.18.13
   - @omnigraph/json-schema@0.38.15
   - @graphql-mesh/utils@0.43.13
 
@@ -1788,7 +1788,7 @@
 - Updated dependencies
   [[`63ab17f0b`](https://github.com/Urigo/graphql-mesh/commit/63ab17f0bd402b5a3923d752ba715f556f3beadd)]:
   - @graphql-mesh/types@0.91.4
-  - json-machete@0.18.12
+  - @bouyguestelecom/graphql-json-machete@0.18.12
   - @omnigraph/json-schema@0.38.14
   - @graphql-mesh/utils@0.43.12
 
@@ -1798,7 +1798,7 @@
 
 - Updated dependencies
   [[`bb58a5d9e`](https://github.com/Urigo/graphql-mesh/commit/bb58a5d9e41fd359180da97d8c1b5d628fa31ad3)]:
-  - json-machete@0.18.11
+  - @bouyguestelecom/graphql-json-machete@0.18.11
   - @omnigraph/json-schema@0.38.13
 
 ## 0.19.13
@@ -1810,7 +1810,7 @@
   [`8c9c39cf5`](https://github.com/Urigo/graphql-mesh/commit/8c9c39cf56c0cd0e3e3908b5c54cb4c1bca4151e)]:
   - @graphql-mesh/types@0.91.3
   - @graphql-mesh/utils@0.43.11
-  - json-machete@0.18.10
+  - @bouyguestelecom/graphql-json-machete@0.18.10
   - @omnigraph/json-schema@0.38.12
 
 ## 0.19.12
@@ -1821,7 +1821,7 @@
   [[`975715275`](https://github.com/Urigo/graphql-mesh/commit/9757152751e37062bca4ba114bee65a0c79a3d4d),
   [`989a47802`](https://github.com/Urigo/graphql-mesh/commit/989a478027b703ab969d529f09bc83071fe4f96f)]:
   - @graphql-mesh/cross-helpers@0.3.3
-  - json-machete@0.18.9
+  - @bouyguestelecom/graphql-json-machete@0.18.9
   - @graphql-mesh/types@0.91.2
   - @omnigraph/json-schema@0.38.11
   - @graphql-mesh/utils@0.43.10
@@ -1833,7 +1833,7 @@
 - Updated dependencies
   [[`d694ccc1f`](https://github.com/Urigo/graphql-mesh/commit/d694ccc1f5a2cbc3ed97778a3210594005f2830b)]:
   - @graphql-mesh/utils@0.43.9
-  - json-machete@0.18.8
+  - @bouyguestelecom/graphql-json-machete@0.18.8
   - @omnigraph/json-schema@0.38.10
   - @graphql-mesh/types@0.91.1
 
@@ -1853,7 +1853,7 @@
   - @graphql-mesh/types@0.91.0
   - @graphql-mesh/utils@0.43.8
   - @omnigraph/json-schema@0.38.9
-  - json-machete@0.18.7
+  - @bouyguestelecom/graphql-json-machete@0.18.7
 
 ## 0.19.9
 
@@ -1865,7 +1865,7 @@
   [`bcf29dfd0`](https://github.com/Urigo/graphql-mesh/commit/bcf29dfd02d19cf5c770b83fc627f059569a0fac)]:
   - @graphql-mesh/types@0.90.0
   - @graphql-mesh/utils@0.43.7
-  - json-machete@0.18.6
+  - @bouyguestelecom/graphql-json-machete@0.18.6
   - @omnigraph/json-schema@0.38.8
 
 ## 0.19.8
@@ -1877,7 +1877,7 @@
   [`ed5843d8a`](https://github.com/Urigo/graphql-mesh/commit/ed5843d8a771045eed61cdad33b72734666577d5)]:
   - @graphql-mesh/types@0.89.5
   - @graphql-mesh/utils@0.43.6
-  - json-machete@0.18.5
+  - @bouyguestelecom/graphql-json-machete@0.18.5
   - @omnigraph/json-schema@0.38.7
 
 ## 0.19.7
@@ -1912,7 +1912,7 @@
   - @graphql-mesh/utils@0.43.5
   - @omnigraph/json-schema@0.38.6
   - @graphql-mesh/string-interpolation@0.4.2
-  - json-machete@0.18.4
+  - @bouyguestelecom/graphql-json-machete@0.18.4
 
 ## 0.19.6
 
@@ -1923,7 +1923,7 @@
   [`99f4c84e6`](https://github.com/Urigo/graphql-mesh/commit/99f4c84e619996bc4f392bc81c33022b8678e0d9)]:
   - @graphql-mesh/types@0.89.3
   - @graphql-mesh/utils@0.43.4
-  - json-machete@0.18.3
+  - @bouyguestelecom/graphql-json-machete@0.18.3
   - @omnigraph/json-schema@0.38.5
 
 ## 0.19.5
@@ -1959,7 +1959,7 @@
   - @graphql-mesh/string-interpolation@0.4.1
   - @graphql-mesh/types@0.89.2
   - @graphql-mesh/utils@0.43.3
-  - json-machete@0.18.2
+  - @bouyguestelecom/graphql-json-machete@0.18.2
 
 ## 0.19.2
 
@@ -1970,7 +1970,7 @@
   [`f1c2e20e5`](https://github.com/Urigo/graphql-mesh/commit/f1c2e20e5228425dc220986d85653fc7f3811e43)]:
   - @graphql-mesh/types@0.89.1
   - @graphql-mesh/utils@0.43.2
-  - json-machete@0.18.1
+  - @bouyguestelecom/graphql-json-machete@0.18.1
   - @omnigraph/json-schema@0.38.2
 
 ## 0.19.1
@@ -2000,7 +2000,7 @@
 
 - Updated dependencies
   [[`3edaa00ac`](https://github.com/Urigo/graphql-mesh/commit/3edaa00ac772d519e351e620bfa670514db886e5)]:
-  - json-machete@0.18.0
+  - @bouyguestelecom/graphql-json-machete@0.18.0
   - @omnigraph/json-schema@0.38.0
   - @graphql-mesh/types@0.89.0
   - @graphql-mesh/utils@0.43.1
@@ -2029,7 +2029,7 @@
   - @graphql-mesh/types@0.88.0
   - @graphql-mesh/utils@0.43.0
   - @omnigraph/json-schema@0.37.0
-  - json-machete@0.17.0
+  - @bouyguestelecom/graphql-json-machete@0.17.0
 
 ## 0.17.11
 
@@ -2040,7 +2040,7 @@
   [`979e8dcc6`](https://github.com/Urigo/graphql-mesh/commit/979e8dcc6c59f5a2f04588f8c0b6dd3e6eea3332)]:
   - @graphql-mesh/utils@0.42.9
   - @omnigraph/json-schema@0.36.11
-  - json-machete@0.16.5
+  - @bouyguestelecom/graphql-json-machete@0.16.5
   - @graphql-mesh/types@0.87.1
 
 ## 0.17.10
@@ -2051,7 +2051,7 @@
   [[`0d9771428`](https://github.com/Urigo/graphql-mesh/commit/0d97714284a6eea31c2c9420addd4a1518584924),
   [`686b3301b`](https://github.com/Urigo/graphql-mesh/commit/686b3301b2441bc095a379d95e77686b4f5ceb70)]:
   - @graphql-mesh/types@0.87.0
-  - json-machete@0.16.4
+  - @bouyguestelecom/graphql-json-machete@0.16.4
   - @omnigraph/json-schema@0.36.10
   - @graphql-mesh/utils@0.42.8
 
@@ -2073,7 +2073,7 @@
 
 - Updated dependencies
   [[`3d8f23adb`](https://github.com/Urigo/graphql-mesh/commit/3d8f23adb28ca102b19433eca5baf8d341ac7305)]:
-  - json-machete@0.16.3
+  - @bouyguestelecom/graphql-json-machete@0.16.3
   - @omnigraph/json-schema@0.36.8
 
 ## 0.17.7
@@ -2122,7 +2122,7 @@
   - @graphql-mesh/types@0.86.0
   - @graphql-mesh/utils@0.42.7
   - @omnigraph/json-schema@0.36.7
-  - json-machete@0.16.2
+  - @bouyguestelecom/graphql-json-machete@0.16.2
 
 ## 0.17.6
 
@@ -2143,7 +2143,7 @@
   - @graphql-mesh/types@0.85.7
   - @graphql-mesh/utils@0.42.6
   - @omnigraph/json-schema@0.36.6
-  - json-machete@0.16.1
+  - @bouyguestelecom/graphql-json-machete@0.16.1
 
 ## 0.17.5
 
@@ -2160,7 +2160,7 @@
   - @graphql-mesh/types@0.85.6
   - @graphql-mesh/utils@0.42.5
   - @omnigraph/json-schema@0.36.5
-  - json-machete@0.16.0
+  - @bouyguestelecom/graphql-json-machete@0.16.0
 
 ## 0.17.4
 
@@ -2168,7 +2168,7 @@
 
 - Updated dependencies
   [[`d5f2d950e`](https://github.com/Urigo/graphql-mesh/commit/d5f2d950e6318a74c062c9dbc436d5e9c0e8d59d)]:
-  - json-machete@0.15.14
+  - @bouyguestelecom/graphql-json-machete@0.15.14
   - @graphql-mesh/utils@0.42.4
   - @omnigraph/json-schema@0.36.4
   - @graphql-mesh/types@0.85.5
@@ -2187,7 +2187,7 @@
   - @graphql-mesh/types@0.85.4
   - @graphql-mesh/utils@0.42.3
   - @omnigraph/json-schema@0.36.3
-  - json-machete@0.15.13
+  - @bouyguestelecom/graphql-json-machete@0.15.13
 
 ## 0.17.2
 
@@ -2209,7 +2209,7 @@
     [`@omnigraph/json-schema@0.36.1` ↗︎](https://www.npmjs.com/package/@omnigraph/json-schema/v/0.36.1)
     (from `0.36.0`, in `dependencies`)
   - Updated dependency
-    [`json-machete@0.15.11` ↗︎](https://www.npmjs.com/package/json-machete/v/0.15.11) (from
+    [`@bouyguestelecom/graphql-json-machete@0.15.11` ↗︎](https://www.npmjs.com/package/@bouyguestelecom/graphql-json-machete/v/0.15.11) (from
     `0.15.10`, in `dependencies`)
 - Updated dependencies
   [[`704a0bd6e`](https://github.com/Urigo/graphql-mesh/commit/704a0bd6e904b4f46a24f8844834adb3bd501e56),
@@ -2220,7 +2220,7 @@
   - @graphql-mesh/types@0.85.3
   - @graphql-mesh/utils@0.42.2
   - @omnigraph/json-schema@0.36.2
-  - json-machete@0.15.12
+  - @bouyguestelecom/graphql-json-machete@0.15.12
 
 ## 0.17.1
 
@@ -2234,7 +2234,7 @@
   - @graphql-mesh/string-interpolation@0.3.3
   - @omnigraph/json-schema@0.36.1
   - @graphql-mesh/types@0.85.2
-  - json-machete@0.15.11
+  - @bouyguestelecom/graphql-json-machete@0.15.11
   - @graphql-mesh/utils@0.42.1
 
 ## 0.17.0
@@ -2256,7 +2256,7 @@
   - @graphql-mesh/types@0.85.1
   - @graphql-mesh/utils@0.42.0
   - @omnigraph/json-schema@0.36.0
-  - json-machete@0.15.10
+  - @bouyguestelecom/graphql-json-machete@0.15.10
 
 ## 0.16.10
 
@@ -2275,7 +2275,7 @@
   [[`6fb57d3ba`](https://github.com/Urigo/graphql-mesh/commit/6fb57d3ba6ce68e47d9f5dbf54e57d178441fa18),
   [`814f2d516`](https://github.com/Urigo/graphql-mesh/commit/814f2d51692df593fcf368765e9c8a0ce99f46bd)]:
   - @graphql-mesh/types@0.85.0
-  - json-machete@0.15.9
+  - @bouyguestelecom/graphql-json-machete@0.15.9
   - @omnigraph/json-schema@0.35.9
   - @graphql-mesh/utils@0.41.22
 
@@ -2286,7 +2286,7 @@
 - Updated dependencies
   [[`637e9e9d8`](https://github.com/Urigo/graphql-mesh/commit/637e9e9d8a702cf28cde48137a0f73bab7628f6d)]:
   - @graphql-mesh/types@0.84.10
-  - json-machete@0.15.8
+  - @bouyguestelecom/graphql-json-machete@0.15.8
   - @omnigraph/json-schema@0.35.8
   - @graphql-mesh/utils@0.41.21
 
@@ -2299,7 +2299,7 @@
   [`48171a006`](https://github.com/Urigo/graphql-mesh/commit/48171a0064c788d6e8ebed7a4f7aa67a5577cdc5),
   [`dd831a7d1`](https://github.com/Urigo/graphql-mesh/commit/dd831a7d1256400d1b7441cfb99b517cf856ce5b)]:
   - @omnigraph/json-schema@0.35.7
-  - json-machete@0.15.7
+  - @bouyguestelecom/graphql-json-machete@0.15.7
   - @graphql-mesh/types@0.84.9
   - @graphql-mesh/utils@0.41.20
 
@@ -2310,7 +2310,7 @@
 - Updated dependencies
   [[`5b44abcd2`](https://github.com/Urigo/graphql-mesh/commit/5b44abcd2aaa765ee329539112d9dface063efa6)]:
   - @graphql-mesh/utils@0.41.19
-  - json-machete@0.15.6
+  - @bouyguestelecom/graphql-json-machete@0.15.6
   - @omnigraph/json-schema@0.35.6
   - @graphql-mesh/types@0.84.8
 
@@ -2323,7 +2323,7 @@
   [`ffb301435`](https://github.com/Urigo/graphql-mesh/commit/ffb3014353c17d23a03cf8001eba606c85c2043f)]:
   - @graphql-mesh/types@0.84.7
   - @graphql-mesh/utils@0.41.18
-  - json-machete@0.15.5
+  - @bouyguestelecom/graphql-json-machete@0.15.5
   - @omnigraph/json-schema@0.35.5
 
 ## 0.16.4
@@ -2335,7 +2335,7 @@
   [`31a64714a`](https://github.com/Urigo/graphql-mesh/commit/31a64714a3e47dc41b950b3e1cfd1a49e7ff2d8a)]:
   - @graphql-mesh/types@0.84.6
   - @graphql-mesh/utils@0.41.17
-  - json-machete@0.15.4
+  - @bouyguestelecom/graphql-json-machete@0.15.4
   - @omnigraph/json-schema@0.35.4
 
 ## 0.16.3
@@ -2345,7 +2345,7 @@
 - Updated dependencies
   [[`88ab8f9ae`](https://github.com/Urigo/graphql-mesh/commit/88ab8f9ae32a4d0f52c978d625082abe075bebe4)]:
   - @graphql-mesh/utils@0.41.16
-  - json-machete@0.15.3
+  - @bouyguestelecom/graphql-json-machete@0.15.3
   - @omnigraph/json-schema@0.35.3
   - @graphql-mesh/types@0.84.5
 
@@ -2356,7 +2356,7 @@
 - Updated dependencies
   [[`186e37bcd`](https://github.com/Urigo/graphql-mesh/commit/186e37bcd94c6eae16b30abd2f4c8b04d2ef422e)]:
   - @graphql-mesh/utils@0.41.15
-  - json-machete@0.15.2
+  - @bouyguestelecom/graphql-json-machete@0.15.2
   - @omnigraph/json-schema@0.35.2
   - @graphql-mesh/types@0.84.4
 
@@ -2369,7 +2369,7 @@
   [`d08ed0e77`](https://github.com/Urigo/graphql-mesh/commit/d08ed0e77a274ceaccff6c7a2b2c80326ca5d035)]:
   - @graphql-mesh/utils@0.41.14
   - @omnigraph/json-schema@0.35.1
-  - json-machete@0.15.1
+  - @bouyguestelecom/graphql-json-machete@0.15.1
   - @graphql-mesh/types@0.84.3
 
 ## 0.16.0
@@ -2408,7 +2408,7 @@
   [[`10f469e10`](https://github.com/Urigo/graphql-mesh/commit/10f469e109105edaa2ba4d9111bc671ba58baae8),
   [`10f469e10`](https://github.com/Urigo/graphql-mesh/commit/10f469e109105edaa2ba4d9111bc671ba58baae8),
   [`10f469e10`](https://github.com/Urigo/graphql-mesh/commit/10f469e109105edaa2ba4d9111bc671ba58baae8)]:
-  - json-machete@0.15.0
+  - @bouyguestelecom/graphql-json-machete@0.15.0
   - @omnigraph/json-schema@0.35.0
 
 ## 0.15.4
@@ -2418,7 +2418,7 @@
 - Updated dependencies
   [[`ff251e4c7`](https://github.com/Urigo/graphql-mesh/commit/ff251e4c7654306d3030774447c991788768e148)]:
   - @graphql-mesh/types@0.84.2
-  - json-machete@0.14.14
+  - @bouyguestelecom/graphql-json-machete@0.14.14
   - @omnigraph/json-schema@0.34.4
   - @graphql-mesh/utils@0.41.13
 
@@ -2428,7 +2428,7 @@
 
 - Updated dependencies []:
   - @graphql-mesh/types@0.84.1
-  - json-machete@0.14.13
+  - @bouyguestelecom/graphql-json-machete@0.14.13
   - @omnigraph/json-schema@0.34.3
   - @graphql-mesh/utils@0.41.12
 
@@ -2448,7 +2448,7 @@
   [[`077e65c18`](https://github.com/Urigo/graphql-mesh/commit/077e65c1857aaefa2689f33decc9e72ded281c94),
   [`ee1cb6f76`](https://github.com/Urigo/graphql-mesh/commit/ee1cb6f7620f71fd824e69f4171cfef6c5d51794)]:
   - @graphql-mesh/types@0.84.0
-  - json-machete@0.14.12
+  - @bouyguestelecom/graphql-json-machete@0.14.12
   - @omnigraph/json-schema@0.34.1
   - @graphql-mesh/utils@0.41.11
 
@@ -2467,7 +2467,7 @@
   [[`80013a3cd`](https://github.com/Urigo/graphql-mesh/commit/80013a3cd836bcc6239b83b4eb0c27a7f7ef2cd7)]:
   - @omnigraph/json-schema@0.34.0
   - @graphql-mesh/types@0.83.5
-  - json-machete@0.14.11
+  - @bouyguestelecom/graphql-json-machete@0.14.11
   - @graphql-mesh/utils@0.41.10
 
 ## 0.14.11
@@ -2491,7 +2491,7 @@
     [`@omnigraph/json-schema@0.33.6` ↗︎](https://www.npmjs.com/package/@omnigraph/json-schema/v/0.33.6)
     (from `0.33.0`, in `dependencies`)
   - Updated dependency
-    [`json-machete@0.14.9` ↗︎](https://www.npmjs.com/package/json-machete/v/0.14.9) (from `0.14.3`,
+    [`@bouyguestelecom/graphql-json-machete@0.14.9` ↗︎](https://www.npmjs.com/package/@bouyguestelecom/graphql-json-machete/v/0.14.9) (from `0.14.3`,
     in `dependencies`)
 
 - [`317f6b454`](https://github.com/Urigo/graphql-mesh/commit/317f6b454db59e351cf6360df5575248cb579dd4)
@@ -2509,7 +2509,7 @@
   - @graphql-mesh/types@0.83.4
   - @graphql-mesh/utils@0.41.9
   - @omnigraph/json-schema@0.33.7
-  - json-machete@0.14.10
+  - @bouyguestelecom/graphql-json-machete@0.14.10
 
 ## 0.14.10
 
@@ -2525,7 +2525,7 @@
   - @graphql-mesh/types@0.83.3
   - @graphql-mesh/utils@0.41.8
   - @omnigraph/json-schema@0.33.6
-  - json-machete@0.14.9
+  - @bouyguestelecom/graphql-json-machete@0.14.9
 
 ## 0.14.9
 
@@ -2534,7 +2534,7 @@
 - Updated dependencies
   [[`d84f81d94`](https://github.com/Urigo/graphql-mesh/commit/d84f81d9487ce228125863b8b283adab75daff19)]:
   - @graphql-mesh/utils@0.41.7
-  - json-machete@0.14.8
+  - @bouyguestelecom/graphql-json-machete@0.14.8
   - @omnigraph/json-schema@0.33.5
   - @graphql-mesh/types@0.83.2
 
@@ -2548,7 +2548,7 @@
   [`2a3753b5a`](https://github.com/Urigo/graphql-mesh/commit/2a3753b5a4bd23c7c89f4f08a3e55093e24902a8)]:
   - @graphql-mesh/utils@0.41.6
   - @omnigraph/json-schema@0.33.4
-  - json-machete@0.14.7
+  - @bouyguestelecom/graphql-json-machete@0.14.7
   - @graphql-mesh/types@0.83.1
 
 ## 0.14.7
@@ -2560,7 +2560,7 @@
   [`24afabece`](https://github.com/Urigo/graphql-mesh/commit/24afabece51aee171f902776d3f59b4a17026c49),
   [`44b868196`](https://github.com/Urigo/graphql-mesh/commit/44b86819695a298e60b1d7b6c54ae2772e8f1588)]:
   - @graphql-mesh/types@0.83.0
-  - json-machete@0.14.6
+  - @bouyguestelecom/graphql-json-machete@0.14.6
   - @omnigraph/json-schema@0.33.3
   - @graphql-mesh/utils@0.41.5
 
@@ -2578,7 +2578,7 @@
   - @graphql-mesh/types@0.82.3
   - @graphql-mesh/utils@0.41.4
   - @omnigraph/json-schema@0.33.2
-  - json-machete@0.14.5
+  - @bouyguestelecom/graphql-json-machete@0.14.5
 
 ## 0.14.5
 
@@ -2589,7 +2589,7 @@
   [`b9bb80094`](https://github.com/Urigo/graphql-mesh/commit/b9bb8009407d27440267a5e9a7ec5dbfecc9bf8f)]:
   - @omnigraph/json-schema@0.33.1
   - @graphql-mesh/types@0.82.2
-  - json-machete@0.14.4
+  - @bouyguestelecom/graphql-json-machete@0.14.4
   - @graphql-mesh/utils@0.41.3
 
 ## 0.14.4
@@ -2605,7 +2605,7 @@
   [[`3571324cd`](https://github.com/Urigo/graphql-mesh/commit/3571324cdca5d731d67ee1cc8829225986360409),
   [`3571324cd`](https://github.com/Urigo/graphql-mesh/commit/3571324cdca5d731d67ee1cc8829225986360409)]:
   - @omnigraph/json-schema@0.33.0
-  - json-machete@0.14.3
+  - @bouyguestelecom/graphql-json-machete@0.14.3
 
 ## 0.14.3
 
@@ -2627,7 +2627,7 @@
   [[`3165827f7`](https://github.com/Urigo/graphql-mesh/commit/3165827f74b48a914b9604b024cd1318c211aa14),
   [`e1891993c`](https://github.com/Urigo/graphql-mesh/commit/e1891993c1b638987b62ea93f5571f656f668ccc)]:
   - @graphql-mesh/types@0.82.1
-  - json-machete@0.14.2
+  - @bouyguestelecom/graphql-json-machete@0.14.2
   - @omnigraph/json-schema@0.32.2
   - @graphql-mesh/utils@0.41.2
 
@@ -2659,7 +2659,7 @@
   [[`7e9482723`](https://github.com/Urigo/graphql-mesh/commit/7e94827235f4abb81d7434d26c55d4fd9a07bdd5),
   [`ca7994fad`](https://github.com/Urigo/graphql-mesh/commit/ca7994fad35d8d88e66117cb166e329ccda09bf9),
   [`ca7994fad`](https://github.com/Urigo/graphql-mesh/commit/ca7994fad35d8d88e66117cb166e329ccda09bf9)]:
-  - json-machete@0.14.1
+  - @bouyguestelecom/graphql-json-machete@0.14.1
   - @graphql-mesh/types@0.82.0
   - @omnigraph/json-schema@0.32.1
   - @graphql-mesh/utils@0.41.1
@@ -2761,7 +2761,7 @@
   - @graphql-mesh/types@0.81.0
   - @graphql-mesh/utils@0.41.0
   - @omnigraph/json-schema@0.32.0
-  - json-machete@0.14.0
+  - @bouyguestelecom/graphql-json-machete@0.14.0
 
 ## 0.13.0
 
@@ -2796,7 +2796,7 @@
   [`be79b20a5`](https://github.com/Urigo/graphql-mesh/commit/be79b20a59b14d5d79bfeb260e4ecabc58c26efb),
   [`b5c59ffce`](https://github.com/Urigo/graphql-mesh/commit/b5c59ffceae7091f8d2b98ee548890acdbd57824)]:
   - @graphql-mesh/utils@0.40.0
-  - json-machete@0.13.2
+  - @bouyguestelecom/graphql-json-machete@0.13.2
   - @graphql-mesh/types@0.80.2
   - @omnigraph/json-schema@0.30.0
 
@@ -2815,7 +2815,7 @@
 - Updated dependencies
   [[`f23e14eba`](https://github.com/Urigo/graphql-mesh/commit/f23e14ebaf7c6a869207edc43b0e2a8114d0d21f)]:
   - @graphql-mesh/utils@0.39.0
-  - json-machete@0.13.1
+  - @bouyguestelecom/graphql-json-machete@0.13.1
   - @omnigraph/json-schema@0.29.1
   - @graphql-mesh/types@0.80.1
 
@@ -2855,7 +2855,7 @@
   [`ca6d6206b`](https://github.com/Urigo/graphql-mesh/commit/ca6d6206b02dfaa42eafa83442a04b33bbdf2db9),
   [`f882aca38`](https://github.com/Urigo/graphql-mesh/commit/f882aca388380ad9dff1d618424e8a36b8607319)]:
   - @omnigraph/json-schema@0.29.0
-  - json-machete@0.13.0
+  - @bouyguestelecom/graphql-json-machete@0.13.0
   - @graphql-mesh/types@0.80.0
   - @graphql-mesh/utils@0.38.1
 
@@ -2980,7 +2980,7 @@
   - @graphql-mesh/types@0.79.0
   - @graphql-mesh/utils@0.38.0
   - @omnigraph/json-schema@0.27.0
-  - json-machete@0.12.0
+  - @bouyguestelecom/graphql-json-machete@0.12.0
   - @graphql-mesh/string-interpolation@0.3.2
 
 ## 0.8.2
@@ -3001,7 +3001,7 @@
   - @graphql-mesh/types@0.78.8
   - @graphql-mesh/utils@0.37.9
   - @omnigraph/json-schema@0.26.2
-  - json-machete@0.11.2
+  - @bouyguestelecom/graphql-json-machete@0.11.2
 
 ## 0.8.1
 
@@ -3018,7 +3018,7 @@
   - @graphql-mesh/types@0.78.7
   - @graphql-mesh/utils@0.37.8
   - @omnigraph/json-schema@0.26.1
-  - json-machete@0.11.1
+  - @bouyguestelecom/graphql-json-machete@0.11.1
 
 ## 0.8.0
 
@@ -3081,7 +3081,7 @@
   [[`755d3d487`](https://github.com/Urigo/graphql-mesh/commit/755d3d487c3069664a96e71732fa25aa2d161b1b),
   [`669abf58f`](https://github.com/Urigo/graphql-mesh/commit/669abf58f86faf5f9d678cf9ad103143488960d6)]:
   - @omnigraph/json-schema@0.25.0
-  - json-machete@0.11.0
+  - @bouyguestelecom/graphql-json-machete@0.11.0
 
 ## 0.7.10
 
@@ -3128,7 +3128,7 @@
   [`12430d907`](https://github.com/Urigo/graphql-mesh/commit/12430d907ead31fdd5eda532f8087f392a155834),
   [`961e07113`](https://github.com/Urigo/graphql-mesh/commit/961e07113161a54823644a1fecb39e2b5066544e)]:
   - @omnigraph/json-schema@0.24.6
-  - json-machete@0.10.6
+  - @bouyguestelecom/graphql-json-machete@0.10.6
   - @graphql-mesh/utils@0.37.7
   - @graphql-mesh/types@0.78.6
 
@@ -3150,7 +3150,7 @@
   - @omnigraph/json-schema@0.24.5
   - @graphql-mesh/types@0.78.5
   - @graphql-mesh/utils@0.37.6
-  - json-machete@0.10.5
+  - @bouyguestelecom/graphql-json-machete@0.10.5
 
 ## 0.7.7
 
@@ -3158,7 +3158,7 @@
 
 - Updated dependencies [30d046724]
   - @graphql-mesh/utils@0.37.5
-  - json-machete@0.10.4
+  - @bouyguestelecom/graphql-json-machete@0.10.4
   - @omnigraph/json-schema@0.24.4
   - @graphql-mesh/types@0.78.4
 
@@ -3170,7 +3170,7 @@
   - @omnigraph/json-schema@0.24.3
   - @graphql-mesh/types@0.78.3
   - @graphql-mesh/utils@0.37.4
-  - json-machete@0.10.3
+  - @bouyguestelecom/graphql-json-machete@0.10.3
 
 ## 0.7.5
 
@@ -3192,7 +3192,7 @@
 - Updated dependencies [bad0f40ab]
 - Updated dependencies [a2ef35c35]
   - @omnigraph/json-schema@0.24.2
-  - json-machete@0.10.2
+  - @bouyguestelecom/graphql-json-machete@0.10.2
   - @graphql-mesh/types@0.78.2
   - @graphql-mesh/utils@0.37.3
 
@@ -3203,7 +3203,7 @@
 - @graphql-mesh/types@0.78.1
 - @omnigraph/json-schema@0.24.1
 - @graphql-mesh/utils@0.37.2
-- json-machete@0.10.1
+- @bouyguestelecom/graphql-json-machete@0.10.1
 
 ## 0.7.3
 
@@ -3212,7 +3212,7 @@
 - Updated dependencies [eade5bb9f]
 - Updated dependencies [6e6fd4ab7]
 - Updated dependencies [bcd9355ee]
-  - json-machete@0.10.0
+  - @bouyguestelecom/graphql-json-machete@0.10.0
   - @omnigraph/json-schema@0.24.0
   - @graphql-mesh/utils@0.37.1
   - @graphql-mesh/types@0.78.0
@@ -3227,7 +3227,7 @@
   - @graphql-mesh/cross-helpers@0.2.0
   - @omnigraph/json-schema@0.23.0
   - @graphql-mesh/utils@0.37.0
-  - json-machete@0.9.2
+  - @bouyguestelecom/graphql-json-machete@0.9.2
 
 ## 0.7.1
 
@@ -3241,7 +3241,7 @@
   - @omnigraph/json-schema@0.22.0
   - @graphql-mesh/cross-helpers@0.1.7
   - @graphql-mesh/types@0.77.0
-  - json-machete@0.9.1
+  - @bouyguestelecom/graphql-json-machete@0.9.1
   - @graphql-mesh/utils@0.36.1
 
 ## 0.7.0
@@ -3275,7 +3275,7 @@
 - Updated dependencies [19d06f6c9]
 - Updated dependencies [a0950ac6f]
   - @graphql-mesh/utils@0.36.0
-  - json-machete@0.9.0
+  - @bouyguestelecom/graphql-json-machete@0.9.0
   - @omnigraph/json-schema@0.21.0
   - @graphql-mesh/types@0.76.0
 
@@ -3288,7 +3288,7 @@
   - @graphql-mesh/types@0.75.0
   - @omnigraph/json-schema@0.20.7
   - @graphql-mesh/utils@0.35.7
-  - json-machete@0.8.15
+  - @bouyguestelecom/graphql-json-machete@0.8.15
 
 ## 0.6.15
 
@@ -3298,7 +3298,7 @@
   - @graphql-mesh/types@0.74.2
   - @graphql-mesh/utils@0.35.6
   - @omnigraph/json-schema@0.20.6
-  - json-machete@0.8.14
+  - @bouyguestelecom/graphql-json-machete@0.8.14
 
 ## 0.6.14
 
@@ -3306,7 +3306,7 @@
 
 - Updated dependencies [41cfb46b4]
   - @graphql-mesh/utils@0.35.5
-  - json-machete@0.8.13
+  - @bouyguestelecom/graphql-json-machete@0.8.13
   - @omnigraph/json-schema@0.20.5
   - @graphql-mesh/types@0.74.1
 
@@ -3319,7 +3319,7 @@
   - @graphql-mesh/types@0.74.0
   - @omnigraph/json-schema@0.20.4
   - @graphql-mesh/utils@0.35.4
-  - json-machete@0.8.12
+  - @bouyguestelecom/graphql-json-machete@0.8.12
 
 ## 0.6.12
 
@@ -3327,7 +3327,7 @@
 
 - Updated dependencies [9733f490c]
   - @graphql-mesh/utils@0.35.3
-  - json-machete@0.8.11
+  - @bouyguestelecom/graphql-json-machete@0.8.11
   - @omnigraph/json-schema@0.20.3
   - @graphql-mesh/types@0.73.3
 
@@ -3340,7 +3340,7 @@
 - Updated dependencies [3c0366d2c]
 - Updated dependencies [3c0366d2c]
   - @graphql-mesh/cross-helpers@0.1.6
-  - json-machete@0.8.10
+  - @bouyguestelecom/graphql-json-machete@0.8.10
   - @omnigraph/json-schema@0.20.2
   - @graphql-mesh/utils@0.35.2
   - @graphql-mesh/types@0.73.2
@@ -3351,7 +3351,7 @@
 
 - Updated dependencies [abe9fcc41]
   - @graphql-mesh/utils@0.35.1
-  - json-machete@0.8.9
+  - @bouyguestelecom/graphql-json-machete@0.8.9
   - @omnigraph/json-schema@0.20.1
   - @graphql-mesh/types@0.73.1
 
@@ -3366,7 +3366,7 @@
 - Updated dependencies [974e703e2]
 - Updated dependencies [893d526ab]
 - Updated dependencies [974e703e2]
-  - json-machete@0.8.8
+  - @bouyguestelecom/graphql-json-machete@0.8.8
   - @omnigraph/json-schema@0.20.0
   - @graphql-mesh/string-interpolation@0.2.0
   - @graphql-mesh/types@0.73.0
@@ -3378,7 +3378,7 @@
 
 - Updated dependencies [43eb3d2c2]
   - @graphql-mesh/utils@0.34.10
-  - json-machete@0.8.7
+  - @bouyguestelecom/graphql-json-machete@0.8.7
   - @omnigraph/json-schema@0.19.8
   - @graphql-mesh/types@0.72.5
 
@@ -3388,7 +3388,7 @@
 
 - Updated dependencies [55ad5ea44]
   - @graphql-mesh/utils@0.34.9
-  - json-machete@0.8.6
+  - @bouyguestelecom/graphql-json-machete@0.8.6
   - @omnigraph/json-schema@0.19.7
   - @graphql-mesh/types@0.72.4
 
@@ -3398,7 +3398,7 @@
 
 - Updated dependencies [31efa964e]
   - @graphql-mesh/utils@0.34.8
-  - json-machete@0.8.5
+  - @bouyguestelecom/graphql-json-machete@0.8.5
   - @omnigraph/json-schema@0.19.6
   - @graphql-mesh/types@0.72.3
 
@@ -3406,7 +3406,7 @@
 
 ### Patch Changes
 
-- json-machete@0.8.4
+- @bouyguestelecom/graphql-json-machete@0.8.4
 - @graphql-mesh/utils@0.34.7
 - @graphql-mesh/types@0.72.2
 - @omnigraph/json-schema@0.19.5
@@ -3416,7 +3416,7 @@
 ### Patch Changes
 
 - Updated dependencies [b9beacca2]
-  - json-machete@0.8.3
+  - @bouyguestelecom/graphql-json-machete@0.8.3
   - @omnigraph/json-schema@0.19.4
   - @graphql-mesh/utils@0.34.6
   - @graphql-mesh/types@0.72.1
@@ -3429,7 +3429,7 @@
   - @graphql-mesh/types@0.72.0
   - @omnigraph/json-schema@0.19.3
   - @graphql-mesh/utils@0.34.5
-  - json-machete@0.8.2
+  - @bouyguestelecom/graphql-json-machete@0.8.2
 
 ## 0.6.2
 
@@ -3437,7 +3437,7 @@
 
 - Updated dependencies [ddbbec8a8]
   - @graphql-mesh/utils@0.34.4
-  - json-machete@0.8.1
+  - @bouyguestelecom/graphql-json-machete@0.8.1
   - @omnigraph/json-schema@0.19.2
   - @graphql-mesh/types@0.71.4
 
@@ -3448,7 +3448,7 @@
 - 2e9addd80: Bump cross-undici-fetch for Node 18 compat
 - Updated dependencies [2e9addd80]
 - Updated dependencies [2e9addd80]
-  - json-machete@0.8.0
+  - @bouyguestelecom/graphql-json-machete@0.8.0
   - @omnigraph/json-schema@0.19.1
   - @graphql-mesh/utils@0.34.3
   - @graphql-mesh/types@0.71.3
@@ -3471,7 +3471,7 @@
 - @graphql-mesh/types@0.71.2
 - @omnigraph/json-schema@0.18.2
 - @graphql-mesh/utils@0.34.2
-- json-machete@0.7.15
+- @bouyguestelecom/graphql-json-machete@0.7.15
 
 ## 0.5.1
 
@@ -3479,7 +3479,7 @@
 
 - 7856f92d3: Bump all packages
 - Updated dependencies [7856f92d3]
-  - json-machete@0.7.14
+  - @bouyguestelecom/graphql-json-machete@0.7.14
   - @omnigraph/json-schema@0.18.1
   - @graphql-mesh/types@0.71.1
   - @graphql-mesh/utils@0.34.1
@@ -3505,7 +3505,7 @@
 - Updated dependencies [331b62637]
 - Updated dependencies [331b62637]
 - Updated dependencies [331b62637]
-  - json-machete@0.7.13
+  - @bouyguestelecom/graphql-json-machete@0.7.13
   - @omnigraph/json-schema@0.18.0
   - @graphql-mesh/types@0.71.0
   - @graphql-mesh/utils@0.34.0
@@ -3514,7 +3514,7 @@
 
 ### Patch Changes
 
-- json-machete@0.7.12
+- @bouyguestelecom/graphql-json-machete@0.7.12
 - @graphql-mesh/utils@0.33.6
 - @omnigraph/json-schema@0.17.26
 - @graphql-mesh/types@0.70.6
@@ -3526,14 +3526,14 @@
 - @graphql-mesh/types@0.70.5
 - @omnigraph/json-schema@0.17.25
 - @graphql-mesh/utils@0.33.5
-- json-machete@0.7.11
+- @bouyguestelecom/graphql-json-machete@0.7.11
 
 ## 0.4.7
 
 ### Patch Changes
 
 - Updated dependencies [35a55e841]
-  - json-machete@0.7.10
+  - @bouyguestelecom/graphql-json-machete@0.7.10
   - @omnigraph/json-schema@0.17.24
   - @graphql-mesh/types@0.70.4
   - @graphql-mesh/utils@0.33.4
@@ -3545,14 +3545,14 @@
 - @graphql-mesh/types@0.70.3
 - @omnigraph/json-schema@0.17.23
 - @graphql-mesh/utils@0.33.3
-- json-machete@0.7.9
+- @bouyguestelecom/graphql-json-machete@0.7.9
 
 ## 0.4.5
 
 ### Patch Changes
 
 - Updated dependencies [d64c74b75]
-  - json-machete@0.7.8
+  - @bouyguestelecom/graphql-json-machete@0.7.8
   - @omnigraph/json-schema@0.17.22
 
 ## 0.4.4
@@ -3562,7 +3562,7 @@
 - Updated dependencies [b02f5b008]
 - Updated dependencies [114629e47]
   - @graphql-mesh/types@0.70.2
-  - json-machete@0.7.7
+  - @bouyguestelecom/graphql-json-machete@0.7.7
   - @omnigraph/json-schema@0.17.21
   - @graphql-mesh/utils@0.33.2
 
@@ -3579,7 +3579,7 @@
 
 - 2d5c6c72a: add Git repository link in package.json
 - Updated dependencies [2d5c6c72a]
-  - json-machete@0.7.6
+  - @bouyguestelecom/graphql-json-machete@0.7.6
   - @omnigraph/json-schema@0.17.19
   - @graphql-mesh/types@0.70.1
   - @graphql-mesh/utils@0.33.1
@@ -3592,7 +3592,7 @@
   - @graphql-mesh/types@0.70.0
   - @graphql-mesh/utils@0.33.0
   - @omnigraph/json-schema@0.17.18
-  - json-machete@0.7.5
+  - @bouyguestelecom/graphql-json-machete@0.7.5
 
 ## 0.4.0
 
@@ -3606,14 +3606,14 @@
   - @graphql-mesh/types@0.69.0
   - @omnigraph/json-schema@0.17.17
   - @graphql-mesh/utils@0.32.2
-  - json-machete@0.7.4
+  - @bouyguestelecom/graphql-json-machete@0.7.4
 
 ## 0.3.28
 
 ### Patch Changes
 
 - Updated dependencies [c53203723]
-  - json-machete@0.7.3
+  - @bouyguestelecom/graphql-json-machete@0.7.3
   - @omnigraph/json-schema@0.17.16
 
 ## 0.3.27
@@ -3622,7 +3622,7 @@
 
 - e67f6a621: fix(openapi): handle argTypeMap correctly
 - Updated dependencies [c6f0314ac]
-  - json-machete@0.7.2
+  - @bouyguestelecom/graphql-json-machete@0.7.2
   - @omnigraph/json-schema@0.17.15
 
 ## 0.3.26
@@ -3632,14 +3632,14 @@
 - 3448c3177: fix(openapi): sanitize dynamic argument names
   - @omnigraph/json-schema@0.17.14
   - @graphql-mesh/utils@0.32.1
-  - json-machete@0.7.1
+  - @bouyguestelecom/graphql-json-machete@0.7.1
 
 ## 0.3.25
 
 ### Patch Changes
 
 - Updated dependencies [67fb11706]
-  - json-machete@0.7.0
+  - @bouyguestelecom/graphql-json-machete@0.7.0
   - @graphql-mesh/utils@0.32.0
   - @omnigraph/json-schema@0.17.13
 
@@ -3649,7 +3649,7 @@
 
 - Updated dependencies [b2c537c2a]
   - @graphql-mesh/utils@0.31.0
-  - json-machete@0.6.1
+  - @bouyguestelecom/graphql-json-machete@0.6.1
   - @omnigraph/json-schema@0.17.12
 
 ## 0.3.23
@@ -3658,7 +3658,7 @@
 
 - Updated dependencies [b45dac0c0]
 - Updated dependencies [b45dac0c0]
-  - json-machete@0.6.0
+  - @bouyguestelecom/graphql-json-machete@0.6.0
   - @omnigraph/json-schema@0.17.11
 
 ## 0.3.22
@@ -3667,7 +3667,7 @@
 
 - @omnigraph/json-schema@0.17.10
 - @graphql-mesh/utils@0.30.2
-- json-machete@0.5.20
+- @bouyguestelecom/graphql-json-machete@0.5.20
 
 ## 0.3.21
 
@@ -3675,7 +3675,7 @@
 
 - @omnigraph/json-schema@0.17.9
 - @graphql-mesh/utils@0.30.1
-- json-machete@0.5.19
+- @bouyguestelecom/graphql-json-machete@0.5.19
 
 ## 0.3.20
 
@@ -3685,7 +3685,7 @@
 - Updated dependencies [01bac6bb5]
   - @omnigraph/json-schema@0.17.8
   - @graphql-mesh/utils@0.30.0
-  - json-machete@0.5.18
+  - @bouyguestelecom/graphql-json-machete@0.5.18
 
 ## 0.3.19
 
@@ -3693,7 +3693,7 @@
 
 - Updated dependencies [268db0462]
   - @graphql-mesh/utils@0.29.0
-  - json-machete@0.5.17
+  - @bouyguestelecom/graphql-json-machete@0.5.17
   - @omnigraph/json-schema@0.17.7
 
 ## 0.3.18
@@ -3702,7 +3702,7 @@
 
 - @omnigraph/json-schema@0.17.6
 - @graphql-mesh/utils@0.28.5
-- json-machete@0.5.16
+- @bouyguestelecom/graphql-json-machete@0.5.16
 
 ## 0.3.17
 
@@ -3710,7 +3710,7 @@
 
 - @omnigraph/json-schema@0.17.5
 - @graphql-mesh/utils@0.28.4
-- json-machete@0.5.15
+- @bouyguestelecom/graphql-json-machete@0.5.15
 
 ## 0.3.16
 
@@ -3719,7 +3719,7 @@
 - Updated dependencies [f11d8b9c8]
   - @omnigraph/json-schema@0.17.4
   - @graphql-mesh/utils@0.28.3
-  - json-machete@0.5.14
+  - @bouyguestelecom/graphql-json-machete@0.5.14
 
 ## 0.3.15
 
@@ -3728,7 +3728,7 @@
 - Updated dependencies [fb876e99c]
   - @graphql-mesh/utils@0.28.2
   - @omnigraph/json-schema@0.17.3
-  - json-machete@0.5.13
+  - @bouyguestelecom/graphql-json-machete@0.5.13
 
 ## 0.3.14
 
@@ -3736,7 +3736,7 @@
 
 - @omnigraph/json-schema@0.17.2
 - @graphql-mesh/utils@0.28.1
-- json-machete@0.5.12
+- @bouyguestelecom/graphql-json-machete@0.5.12
 
 ## 0.3.13
 
@@ -3749,7 +3749,7 @@
 - Updated dependencies [b481fbc39]
   - @graphql-mesh/utils@0.28.0
   - @omnigraph/json-schema@0.17.1
-  - json-machete@0.5.11
+  - @bouyguestelecom/graphql-json-machete@0.5.11
 
 ## 0.3.12
 
@@ -3765,7 +3765,7 @@
 - Updated dependencies [3f4bb09a9]
   - @omnigraph/json-schema@0.17.0
   - @graphql-mesh/utils@0.27.9
-  - json-machete@0.5.10
+  - @bouyguestelecom/graphql-json-machete@0.5.10
 
 ## 0.3.10
 
@@ -3773,7 +3773,7 @@
 
 - @omnigraph/json-schema@0.16.2
 - @graphql-mesh/utils@0.27.8
-- json-machete@0.5.9
+- @bouyguestelecom/graphql-json-machete@0.5.9
 
 ## 0.3.9
 
@@ -3781,7 +3781,7 @@
 
 - Updated dependencies [ca6bb5ff3]
 - Updated dependencies [ca6bb5ff3]
-  - json-machete@0.5.8
+  - @bouyguestelecom/graphql-json-machete@0.5.8
   - @graphql-mesh/utils@0.27.7
   - @omnigraph/json-schema@0.16.1
 
@@ -3807,7 +3807,7 @@
 - Updated dependencies [e3f941db5]
   - @omnigraph/json-schema@0.15.0
   - @graphql-mesh/utils@0.27.6
-  - json-machete@0.5.7
+  - @bouyguestelecom/graphql-json-machete@0.5.7
 
 ## 0.3.5
 
@@ -3816,7 +3816,7 @@
 - Updated dependencies [1815865c3]
   - @omnigraph/json-schema@0.14.3
   - @graphql-mesh/utils@0.27.5
-  - json-machete@0.5.6
+  - @bouyguestelecom/graphql-json-machete@0.5.6
 
 ## 0.3.4
 
@@ -3824,7 +3824,7 @@
 
 - @omnigraph/json-schema@0.14.2
 - @graphql-mesh/utils@0.27.4
-- json-machete@0.5.5
+- @bouyguestelecom/graphql-json-machete@0.5.5
 
 ## 0.3.3
 
@@ -3832,7 +3832,7 @@
 
 - @omnigraph/json-schema@0.14.1
 - @graphql-mesh/utils@0.27.3
-- json-machete@0.5.4
+- @bouyguestelecom/graphql-json-machete@0.5.4
 
 ## 0.3.2
 
@@ -3858,7 +3858,7 @@
 - Updated dependencies [15e1f68c5]
   - @graphql-mesh/utils@0.27.2
   - @omnigraph/json-schema@0.14.0
-  - json-machete@0.5.3
+  - @bouyguestelecom/graphql-json-machete@0.5.3
 
 ## 0.2.0
 
@@ -3873,7 +3873,7 @@
 - Updated dependencies [3a21004c9]
   - @graphql-mesh/utils@0.27.1
   - @omnigraph/json-schema@0.13.6
-  - json-machete@0.5.2
+  - @bouyguestelecom/graphql-json-machete@0.5.2
 
 ## 0.1.7
 
@@ -3893,7 +3893,7 @@
 ### Patch Changes
 
 - Updated dependencies [1c8827604]
-  - json-machete@0.5.1
+  - @bouyguestelecom/graphql-json-machete@0.5.1
   - @omnigraph/json-schema@0.13.4
 
 ## 0.1.4
@@ -3902,7 +3902,7 @@
 
 - Updated dependencies [49e9ca808]
 - Updated dependencies [49e9ca808]
-  - json-machete@0.5.0
+  - @bouyguestelecom/graphql-json-machete@0.5.0
   - @omnigraph/json-schema@0.13.3
 
 ## 0.1.3
@@ -3911,7 +3911,7 @@
 
 - Updated dependencies [900a01355]
   - @graphql-mesh/utils@0.27.0
-  - json-machete@0.4.3
+  - @bouyguestelecom/graphql-json-machete@0.4.3
   - @omnigraph/json-schema@0.13.2
 
 ## 0.1.2
@@ -3920,7 +3920,7 @@
 
 - @omnigraph/json-schema@0.13.1
 - @graphql-mesh/utils@0.26.4
-- json-machete@0.4.2
+- @bouyguestelecom/graphql-json-machete@0.4.2
 
 ## 0.1.1
 
@@ -3929,7 +3929,7 @@
 - Updated dependencies [a79268b3a]
   - @omnigraph/json-schema@0.13.0
   - @graphql-mesh/utils@0.26.3
-  - json-machete@0.4.1
+  - @bouyguestelecom/graphql-json-machete@0.4.1
 
 ## 0.1.0
 
@@ -3941,7 +3941,7 @@
 
 - Updated dependencies [020431bdc]
 - Updated dependencies [020431bdc]
-  - json-machete@0.4.0
+  - @bouyguestelecom/graphql-json-machete@0.4.0
   - @omnigraph/json-schema@0.12.0
   - @graphql-mesh/utils@0.26.2
 
@@ -3954,7 +3954,7 @@
 - Updated dependencies [6bb4cf673]
   - @graphql-mesh/utils@0.26.1
   - @omnigraph/json-schema@0.11.2
-  - json-machete@0.3.7
+  - @bouyguestelecom/graphql-json-machete@0.3.7
 
 ## 0.0.7
 
@@ -3964,7 +3964,7 @@
 - Updated dependencies [92d687133]
 - Updated dependencies [92d687133]
   - @omnigraph/json-schema@0.11.1
-  - json-machete@0.3.6
+  - @bouyguestelecom/graphql-json-machete@0.3.6
 
 ## 0.0.6
 
@@ -3995,7 +3995,7 @@
 - Updated dependencies [1ab0aebbc]
 - Updated dependencies [56e2257fa]
 - Updated dependencies [56e2257fa]
-  - json-machete@0.3.5
+  - @bouyguestelecom/graphql-json-machete@0.3.5
   - @omnigraph/json-schema@0.8.0
   - @graphql-mesh/utils@0.26.0
 
@@ -4005,7 +4005,7 @@
 
 - Updated dependencies [2b876f2b8]
   - @graphql-mesh/utils@0.25.0
-  - json-machete@0.3.4
+  - @bouyguestelecom/graphql-json-machete@0.3.4
   - @omnigraph/json-schema@0.7.4
 
 ## 0.0.1
@@ -4017,6 +4017,6 @@
 - Updated dependencies [80eb8e92b]
 - Updated dependencies [d907351c5]
 - Updated dependencies [d907351c5]
-  - json-machete@0.3.3
+  - @bouyguestelecom/graphql-json-machete@0.3.3
   - @omnigraph/json-schema@0.7.3
   - @graphql-mesh/utils@0.24.2

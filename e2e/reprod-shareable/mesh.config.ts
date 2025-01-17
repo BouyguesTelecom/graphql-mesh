@@ -2,7 +2,7 @@ import {
   createFederationTransform,
   defineConfig,
   loadGraphQLHTTPSubgraph,
-} from '@graphql-mesh/compose-cli';
+} from '@bouygues-telecom/graphql-compose-cli';
 
 export const composeConfig = defineConfig({
   subgraphs: [
