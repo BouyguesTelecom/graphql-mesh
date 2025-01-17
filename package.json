@@ -1,5 +1,5 @@
 {
-  "name": "graphql-mesh",
+  "name": "@bouygues-telecom/graphql-mesh",
   "license": "MIT",
   "private": true,
   "workspaces": {

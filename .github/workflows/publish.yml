@@ -35,26 +35,19 @@ jobs:
         run: |
           npm run lint
           npm run test
-          npm run check-types
-          npm run test:native
 
-      - name: Publish React package on NPM 📦
-        run:  npm publish --workspace packages/react --access public
+      - name: Publish Json Machete on NPM 📦
+        run: npm version --workspace packages/json-machete --no-git-tag-version ${{ steps.get_version.outputs.VERSION }} && npm publish --workspace packages/json-machete --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_TOKEN }}
 
-      - name: Publish Assets package on NPM 📦
-        run: npm version --workspace packages/assets --no-git-tag-version ${{ steps.get_version.outputs.VERSION }} && npm publish --workspace packages/assets --access public
+      - name: Publish Loaders Openapi on NPM 📦
+        run: npm version --workspace packages/loaders/openapi --no-git-tag-version ${{ steps.get_version.outputs.VERSION }} && npm publish --workspace packages/loaders/openapi --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_TOKEN }}
 
-      - name: Publish Styles package on NPM 📦
-        run: npm version --workspace packages/styles --no-git-tag-version ${{ steps.get_version.outputs.VERSION }} && npm publish --workspace packages/styles --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_TOKEN }}
-
-      - name: Publish Vanilla package on NPM 📦
-        run: npm version --workspace packages/vanilla --no-git-tag-version ${{ steps.get_version.outputs.VERSION }} && npm publish --workspace packages/vanilla --access public
+      - name: Publish Fusion Composition package on NPM 📦
+        run: npm version --workspace packages/fusion/composition --no-git-tag-version ${{ steps.get_version.outputs.VERSION }} && npm publish --workspace packages/fusion/composition --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_TOKEN }}
 
