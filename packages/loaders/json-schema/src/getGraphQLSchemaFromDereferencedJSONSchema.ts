@@ -1,6 +1,6 @@
 import { specifiedDirectives } from 'graphql';
 import { SchemaComposer } from 'graphql-compose';
-import type { JSONSchemaObject } from '@bouygues-telecom/graphql-json-machete';
+import type { JSONSchemaObject } from '@bouygues-telecom/graphql-json-machete/src';
 import type { AddExecutionLogicToComposerOptions } from './addExecutionLogicToComposer.js';
 import { addExecutionDirectivesToComposer } from './addExecutionLogicToComposer.js';
 import { getComposerFromJSONSchema } from './getComposerFromJSONSchema.js';

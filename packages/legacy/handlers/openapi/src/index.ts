@@ -3,7 +3,7 @@ import { buildSchema } from 'graphql';
 import {
   loadNonExecutableGraphQLSchemaFromOpenAPI,
   processDirectives,
-} from '@bouygues-telecom/graphql-openapi-omnigraph';
+} from '@bouygues-telecom/graphql-openapi-omnigraph/src';
 import type { StoreProxy } from '@graphql-mesh/store';
 import { PredefinedProxyOptions } from '@graphql-mesh/store';
 import { stringInterpolator } from '@graphql-mesh/string-interpolation';

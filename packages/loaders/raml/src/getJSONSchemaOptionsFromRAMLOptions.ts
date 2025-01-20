@@ -1,8 +1,8 @@
-import type { JSONSchemaObject } from '@bouygues-telecom/graphql-json-machete';
-import { getAbsolutePath, getCwd } from '@bouygues-telecom/graphql-json-machete';
 import toJsonSchema from 'to-json-schema';
 import type { api10 } from '@ardatan/raml-1-parser';
 import { loadApi } from '@ardatan/raml-1-parser';
+import type { JSONSchemaObject } from '@bouygues-telecom/graphql-json-machete/src';
+import { getAbsolutePath, getCwd } from '@bouygues-telecom/graphql-json-machete/src';
 import { process } from '@graphql-mesh/cross-helpers';
 import { getInterpolatedHeadersFactory } from '@graphql-mesh/string-interpolation';
 import type { MeshFetch } from '@graphql-mesh/types';

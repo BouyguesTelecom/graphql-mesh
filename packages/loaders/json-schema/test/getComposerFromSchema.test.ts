@@ -30,7 +30,7 @@ import {
   GraphQLTime,
   GraphQLURL,
 } from 'graphql-scalars';
-import type { JSONSchemaObject } from '@bouygues-telecom/graphql-json-machete';
+import type { JSONSchemaObject } from '@bouygues-telecom/graphql-json-machete/src';
 import { processDirectives, processScalarType } from '@graphql-mesh/transport-rest';
 import type { Logger, MeshPubSub } from '@graphql-mesh/types';
 import { DefaultLogger, PubSub } from '@graphql-mesh/utils';

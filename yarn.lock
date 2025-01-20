@@ -2939,7 +2939,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bouygues-telecom/graphql-json-machete@npm:0.0.1, @bouygues-telecom/graphql-json-machete@npm:^0.0.1, @bouygues-telecom/graphql-json-machete@workspace:packages/json-machete":
+"@bouygues-telecom/graphql-json-machete@npm:*, @bouygues-telecom/graphql-json-machete@npm:^0.0.1, @bouygues-telecom/graphql-json-machete@workspace:packages/json-machete":
   version: 0.0.0-use.local
   resolution: "@bouygues-telecom/graphql-json-machete@workspace:packages/json-machete"
   dependencies:
@@ -5076,7 +5076,7 @@ __metadata:
   resolution: "@examples/hive-example-gateway@workspace:examples/hive-example/gateway"
   dependencies:
     "@graphql-mesh/cli": "npm:0.98.14"
-    "@graphql-mesh/openapi": "npm:0.0.1"
+    "@graphql-mesh/openapi": "npm:0.108.11"
     "@graphql-mesh/plugin-hive": "npm:0.103.9"
     "@graphql-mesh/transform-hive": "npm:0.103.10"
     graphql: "npm:16.10.0"
@@ -5089,7 +5089,7 @@ __metadata:
   dependencies:
     "@graphql-hive/cli": "npm:0.44.4"
     "@graphql-mesh/cli": "npm:0.98.14"
-    "@graphql-mesh/openapi": "npm:0.0.1"
+    "@graphql-mesh/openapi": "npm:0.108.11"
     fets: "npm:^0.8.0"
     graphql: "npm:16.10.0"
     ts-node: "npm:^10.9.2"
@@ -5103,7 +5103,7 @@ __metadata:
   dependencies:
     "@graphql-hive/cli": "npm:0.44.4"
     "@graphql-mesh/cli": "npm:0.98.14"
-    "@graphql-mesh/openapi": "npm:0.0.1"
+    "@graphql-mesh/openapi": "npm:0.108.11"
     fets: "npm:^0.8.0"
     graphql: "npm:16.10.0"
     ts-node: "npm:^10.9.2"
@@ -5232,7 +5232,7 @@ __metadata:
   dependencies:
     "@graphql-mesh/cli": "npm:0.98.14"
     "@graphql-mesh/config": "npm:0.106.14"
-    "@graphql-mesh/openapi": "npm:0.0.1"
+    "@graphql-mesh/openapi": "npm:0.108.11"
     "@graphql-mesh/runtime": "npm:0.105.9"
     "@types/react": "npm:19.0.1"
     apollo-server-micro: "npm:3.13.0"
@@ -5250,7 +5250,7 @@ __metadata:
   dependencies:
     "@graphql-mesh/cli": "npm:0.98.14"
     "@graphql-mesh/config": "npm:0.106.14"
-    "@graphql-mesh/openapi": "npm:0.0.1"
+    "@graphql-mesh/openapi": "npm:0.108.11"
     "@graphql-mesh/runtime": "npm:0.105.9"
     "@types/react": "npm:19.0.1"
     apollo-server-micro: "npm:3.13.0"
@@ -5313,7 +5313,7 @@ __metadata:
   resolution: "@examples/openapi-javascript-wiki@workspace:examples/openapi-javascript-wiki"
   dependencies:
     "@graphql-mesh/cli": "npm:0.98.14"
-    "@graphql-mesh/openapi": "npm:0.0.1"
+    "@graphql-mesh/openapi": "npm:0.108.11"
     graphql: "npm:16.10.0"
     moment: "npm:2.30.1"
     typescript: "npm:^5.4.2"
@@ -5325,7 +5325,7 @@ __metadata:
   resolution: "@examples/openapi-location-weather@workspace:examples/openapi-location-weather"
   dependencies:
     "@graphql-mesh/cli": "npm:0.98.14"
-    "@graphql-mesh/openapi": "npm:0.0.1"
+    "@graphql-mesh/openapi": "npm:0.108.11"
     "@graphql-mesh/plugin-response-cache": "npm:0.103.9"
     "@graphql-mesh/runtime": "npm:0.105.9"
     "@graphql-mesh/transform-cache": "npm:0.103.10"
@@ -5339,7 +5339,7 @@ __metadata:
   resolution: "@examples/openapi-meilisearch@workspace:examples/openapi-meilisearch"
   dependencies:
     "@graphql-mesh/cli": "npm:0.98.14"
-    "@graphql-mesh/openapi": "npm:0.0.1"
+    "@graphql-mesh/openapi": "npm:0.108.11"
     graphql: "npm:16.10.0"
   languageName: unknown
   linkType: soft
@@ -5365,7 +5365,7 @@ __metadata:
   resolution: "@examples/openapi-stackexchange@workspace:examples/openapi-stackexchange"
   dependencies:
     "@graphql-mesh/cli": "npm:0.98.14"
-    "@graphql-mesh/openapi": "npm:0.0.1"
+    "@graphql-mesh/openapi": "npm:0.108.11"
     graphql: "npm:16.10.0"
   languageName: unknown
   linkType: soft
@@ -5375,7 +5375,7 @@ __metadata:
   resolution: "@examples/openapi-stripe@workspace:examples/openapi-stripe"
   dependencies:
     "@graphql-mesh/cli": "npm:0.98.14"
-    "@graphql-mesh/openapi": "npm:0.0.1"
+    "@graphql-mesh/openapi": "npm:0.108.11"
     graphql: "npm:16.10.0"
   languageName: unknown
   linkType: soft
@@ -5385,7 +5385,7 @@ __metadata:
   resolution: "@examples/openapi-subscriptions@workspace:examples/openapi-subscriptions"
   dependencies:
     "@graphql-mesh/cli": "npm:0.98.14"
-    "@graphql-mesh/openapi": "npm:0.0.1"
+    "@graphql-mesh/openapi": "npm:0.108.11"
     "@whatwg-node/fetch": "npm:^0.10.0"
     concurrently: "npm:9.1.0"
     fets: "npm:^0.8.0"
@@ -5401,7 +5401,7 @@ __metadata:
   resolution: "@examples/openapi-youtrack@workspace:examples/openapi-youtrack"
   dependencies:
     "@graphql-mesh/cli": "npm:0.98.14"
-    "@graphql-mesh/openapi": "npm:0.0.1"
+    "@graphql-mesh/openapi": "npm:0.108.11"
     "@graphql-mesh/transform-resolvers-composition": "npm:0.103.9"
     graphql: "npm:16.10.0"
     graphql-fields: "npm:2.0.3"
@@ -5457,7 +5457,7 @@ __metadata:
   resolution: "@examples/programmatic-batching@workspace:examples/programmatic-batching"
   dependencies:
     "@graphql-mesh/cli": "npm:0.98.14"
-    "@graphql-mesh/openapi": "npm:0.0.1"
+    "@graphql-mesh/openapi": "npm:0.108.11"
     "@sinclair/typebox": "npm:0.34.12"
     concurrently: "npm:9.1.0"
     fets: "npm:0.8.4"
@@ -6590,7 +6590,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@graphql-mesh/json-schema@workspace:packages/legacy/handlers/json-schema"
   dependencies:
-    "@bouygues-telecom/graphql-json-machete": "npm:0.0.1"
+    "@bouygues-telecom/graphql-json-machete": "npm:*"
     "@graphql-mesh/cross-helpers": "npm:^0.4.9"
     "@graphql-mesh/store": "npm:^0.103.9"
     "@graphql-mesh/string-interpolation": "npm:0.5.7"
@@ -6717,7 +6717,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@graphql-mesh/openapi@npm:0.0.1, @graphql-mesh/openapi@workspace:packages/legacy/handlers/openapi":
+"@graphql-mesh/openapi@npm:0.108.11, @graphql-mesh/openapi@workspace:packages/legacy/handlers/openapi":
   version: 0.0.0-use.local
   resolution: "@graphql-mesh/openapi@workspace:packages/legacy/handlers/openapi"
   dependencies:
@@ -10571,7 +10571,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@omnigraph/json-schema@workspace:packages/loaders/json-schema"
   dependencies:
-    "@bouygues-telecom/graphql-json-machete": "npm:0.0.1"
+    "@bouygues-telecom/graphql-json-machete": "npm:*"
     "@graphql-mesh/cross-helpers": "npm:^0.4.9"
     "@graphql-mesh/string-interpolation": "npm:0.5.7"
     "@graphql-mesh/transport-common": "npm:^0.7.13"
