@@ -38,8 +38,8 @@
     "graphql": "*"
   },
   "dependencies": {
+    "@bouygues-telecom/graphql-fusion-composition": "^0.0.1",
     "@commander-js/extra-typings": "^12.1.0",
-    "@graphql-mesh/fusion-composition": "^0.7.15",
     "@graphql-mesh/include": "^0.2.8",
     "@graphql-mesh/string-interpolation": "^0.5.7",
     "@graphql-mesh/types": "^0.103.9",

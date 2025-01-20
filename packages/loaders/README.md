@@ -23,7 +23,7 @@ Omnigraph acts like as a custom loader with GraphQL Config
 ```yaml filename=".graphqlrc.yml"
 schema:
   MyOmnigraph:
-    loader: '@omnigraph/openapi' # This provides GraphQLSchema to GraphQL Config
+    loader: '@bouygues-telecom/graphql-openapi-omnigraph' # This provides GraphQLSchema to GraphQL Config
     source: https://my-openapi-source.com/openapi.yml
     operationHeaders:
       Authorization: Bearer {context.token}
@@ -41,7 +41,7 @@ Like any other GraphQL project. We can use `extensions.codegen`
 ```yaml filename=".graphqlrc.yml"
 schema:
   MyOmnigraph:
-    loader: '@omnigraph/openapi' # This provides GraphQLSchema to GraphQL Config
+    loader: '@bouygues-telecom/graphql-openapi-omnigraph' # This provides GraphQLSchema to GraphQL Config
     source: https://my-openapi-source.com/openapi.yml
 documents: ./src/modules/my-sdk/operations/*.graphql
 extensions:

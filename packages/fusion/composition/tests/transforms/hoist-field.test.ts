@@ -1,5 +1,8 @@
 import { GraphQLObjectType, GraphQLSchema, printSchema, type GraphQLField } from 'graphql';
-import { createFilterTransform, createHoistFieldTransform } from '@graphql-mesh/fusion-composition';
+import {
+  createFilterTransform,
+  createHoistFieldTransform,
+} from '@bouygues-telecom/graphql-fusion-composition';
 import { makeExecutableSchema } from '@graphql-tools/schema';
 import { composeAndGetExecutor, composeAndGetPublicSchema } from './utils';
 

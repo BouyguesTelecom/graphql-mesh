@@ -2,7 +2,7 @@ import { GraphQLSchema, parse } from 'graphql';
 import {
   createEncapsulateTransform,
   createFederationTransform,
-} from '@graphql-mesh/fusion-composition';
+} from '@bouygues-telecom/graphql-fusion-composition';
 import { normalizedExecutor } from '@graphql-tools/executor';
 import { makeExecutableSchema } from '@graphql-tools/schema';
 import { isAsyncIterable, printSchemaWithDirectives } from '@graphql-tools/utils';

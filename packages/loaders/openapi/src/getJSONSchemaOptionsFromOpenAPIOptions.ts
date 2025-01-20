@@ -1,9 +1,13 @@
 import { OperationTypeNode } from 'graphql';
-import type { JSONSchemaObject } from '@bouygues-telecom/graphql-json-machete';
-import { dereferenceObject, handleUntitledDefinitions, resolvePath } from '@bouygues-telecom/graphql-json-machete';
 import type { OpenAPIV2, OpenAPIV3 } from 'openapi-types';
+import { futureAdditions } from '@bouygues-telecom/graphql-fusion-composition';
+import type { JSONSchemaObject } from '@bouygues-telecom/graphql-json-machete';
+import {
+  dereferenceObject,
+  handleUntitledDefinitions,
+  resolvePath,
+} from '@bouygues-telecom/graphql-json-machete';
 import { process } from '@graphql-mesh/cross-helpers';
-import { futureAdditions } from '@graphql-mesh/fusion-composition';
 import {
   getInterpolatedHeadersFactory,
   getInterpolationKeys,

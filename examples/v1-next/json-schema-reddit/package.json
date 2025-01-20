@@ -6,8 +6,8 @@
     "serve": "yarn mesh-serve"
   },
   "dependencies": {
-    "@graphql-hive/gateway": "^1.5.8",
     "@bouygues-telecom/graphql-compose-cli": "workspace:*",
+    "@graphql-hive/gateway": "^1.5.8",
     "@omnigraph/json-schema": "workspace:*",
     "graphql": "16.10.0"
   }

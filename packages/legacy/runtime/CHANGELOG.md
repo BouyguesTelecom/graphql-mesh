@@ -272,7 +272,7 @@
     [`@graphql-tools/delegate@^10.0.23` ↗︎](https://www.npmjs.com/package/@graphql-tools/delegate/v/10.0.23)
     (from `^10.0.21`, in `dependencies`)
   - Updated dependency
-    [`@graphql-tools/executor@^1.3.2` ↗︎](https://www.npmjs.com/package/@graphql-tools/executor/v/1.3.2)
+    [`@graphql-tools/executor@^0.0.1` ↗︎](https://www.npmjs.com/package/@graphql-tools/executor/v/0.0.1)
     (from `^1.3.1`, in `dependencies`)
   - Updated dependency
     [`@graphql-tools/wrap@^10.0.7` ↗︎](https://www.npmjs.com/package/@graphql-tools/wrap/v/10.0.7)

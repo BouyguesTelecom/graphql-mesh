@@ -1,6 +1,6 @@
 # @omnigraph/openapi
 
-## 0.108.11
+## 0.0.1
 
 ### Patch Changes
 

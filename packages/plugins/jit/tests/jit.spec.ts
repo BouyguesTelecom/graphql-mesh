@@ -1,7 +1,7 @@
 import type { ExecutionResult } from 'graphql';
 import { createSchema, createYoga } from 'graphql-yoga';
+import { getUnifiedGraphGracefully } from '@bouygues-telecom/graphql-fusion-composition';
 import { createGatewayRuntime, useCustomFetch } from '@graphql-hive/gateway-runtime';
-import { getUnifiedGraphGracefully } from '@graphql-mesh/fusion-composition';
 
 describe('JIT', () => {
   it('memoizes the compiled query', async () => {

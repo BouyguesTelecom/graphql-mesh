@@ -1,5 +1,5 @@
 import { buildSchema, GraphQLEnumType, GraphQLObjectType, GraphQLUnionType } from 'graphql';
-import { createNamingConventionTransform } from '@graphql-mesh/fusion-composition';
+import { createNamingConventionTransform } from '@bouygues-telecom/graphql-fusion-composition';
 import { makeExecutableSchema } from '@graphql-tools/schema';
 import { composeAndGetExecutor, composeAndGetPublicSchema, expectTheSchemaSDLToBe } from './utils';
 

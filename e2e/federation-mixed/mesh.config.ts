@@ -1,12 +1,12 @@
 import { GraphQLID, GraphQLNonNull } from 'graphql';
-import { Opts } from '@e2e/opts';
 import {
   createFederationTransform,
   createTypeReplaceTransform,
   defineConfig as defineComposeConfig,
   loadGraphQLHTTPSubgraph,
 } from '@bouygues-telecom/graphql-compose-cli';
-import { loadOpenAPISubgraph } from '@omnigraph/openapi';
+import { loadOpenAPISubgraph } from '@bouygues-telecom/graphql-openapi-omnigraph';
+import { Opts } from '@e2e/opts';
 
 const opts = Opts(process.argv);
 

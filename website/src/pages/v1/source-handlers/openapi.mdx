@@ -26,7 +26,7 @@ Then you can import the library in your configuration file, and define your Open
 
 ```ts filename="mesh.config.ts"
 import { defineConfig } from '@bouygues-telecom/graphql-compose-cli'
-import { loadOpenAPISubgraph } from '@omnigraph/openapi'
+import { loadOpenAPISubgraph } from '@bouygues-telecom/graphql-openapi-omnigraph'
 
 export const composeConfig = defineConfig({
   subgraphs: [
@@ -49,7 +49,7 @@ OAS title, the path of the operation, the method of the operation and finally, t
 
 ```ts filename="mesh.config.ts"
 import { defineConfig } from '@bouygues-telecom/graphql-compose-cli'
-import { loadOpenAPISubgraph } from '@omnigraph/openapi'
+import { loadOpenAPISubgraph } from '@bouygues-telecom/graphql-openapi-omnigraph'
 
 export const composeConfig = defineConfig({
   subgraphs: [

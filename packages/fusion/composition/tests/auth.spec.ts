@@ -1,5 +1,5 @@
 import { stripIgnoredCharacters } from 'graphql';
-import { composeSubgraphs } from '@graphql-mesh/fusion-composition';
+import { composeSubgraphs } from '@bouygues-telecom/graphql-fusion-composition';
 import { makeExecutableSchema } from '@graphql-tools/schema';
 
 describe('Composition with Auth', () => {

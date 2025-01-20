@@ -43,7 +43,7 @@
     [`@graphql-mesh/types@^0.103.5` ↗︎](https://www.npmjs.com/package/@graphql-mesh/types/v/0.103.5)
     (to `dependencies`)
   - Added dependency
-    [`@graphql-tools/executor@^1.3.2` ↗︎](https://www.npmjs.com/package/@graphql-tools/executor/v/1.3.2)
+    [`@graphql-tools/executor@^0.0.1` ↗︎](https://www.npmjs.com/package/@graphql-tools/executor/v/0.0.1)
     (to `dependencies`)
   - Added dependency
     [`@graphql-tools/utils@^10.6.0` ↗︎](https://www.npmjs.com/package/@graphql-tools/utils/v/10.6.0)
@@ -63,7 +63,7 @@
     [`@graphql-mesh/types@^0.103.5` ↗︎](https://www.npmjs.com/package/@graphql-mesh/types/v/0.103.5)
     (from `peerDependencies`)
   - Removed dependency
-    [`@graphql-tools/executor@^1.3.2` ↗︎](https://www.npmjs.com/package/@graphql-tools/executor/v/1.3.2)
+    [`@graphql-tools/executor@^0.0.1` ↗︎](https://www.npmjs.com/package/@graphql-tools/executor/v/0.0.1)
     (from `peerDependencies`)
   - Removed dependency
     [`@graphql-tools/utils@^10.6.0` ↗︎](https://www.npmjs.com/package/@graphql-tools/utils/v/10.6.0)
@@ -225,7 +225,7 @@
   [`50bf472`](https://github.com/ardatan/graphql-mesh/commit/50bf4723657d27dc196d80407bda40c93aa5c9be)
   Thanks [@ardatan](https://github.com/ardatan)! - dependencies updates:
   - Updated dependency
-    [`@graphql-tools/executor@^1.3.2` ↗︎](https://www.npmjs.com/package/@graphql-tools/executor/v/1.3.2)
+    [`@graphql-tools/executor@^0.0.1` ↗︎](https://www.npmjs.com/package/@graphql-tools/executor/v/0.0.1)
     (from `^1.3.1`, in `peerDependencies`)
   - Updated dependency
     [`@graphql-tools/utils@^10.5.5` ↗︎](https://www.npmjs.com/package/@graphql-tools/utils/v/10.5.5)

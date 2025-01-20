@@ -1,5 +1,5 @@
 import { createSchema } from 'graphql-yoga';
-import { createFederationTransform } from '@graphql-mesh/fusion-composition';
+import { createFederationTransform } from '@bouygues-telecom/graphql-fusion-composition';
 import { composeAndGetExecutor } from './utils';
 
 describe('Federation', () => {

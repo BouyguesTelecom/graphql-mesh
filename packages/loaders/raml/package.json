@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@ardatan/raml-1-parser": "1.1.69",
+    "@bouygues-telecom/graphql-json-machete": "0.97.5",
     "@graphql-mesh/cross-helpers": "^0.4.9",
     "@graphql-mesh/string-interpolation": "0.5.7",
     "@graphql-mesh/types": "^0.103.9",
@@ -45,7 +46,6 @@
     "@omnigraph/json-schema": "0.108.9",
     "@whatwg-node/fetch": "^0.10.0",
     "change-case": "4.1.2",
-    "@bouygues-telecom/graphql-json-machete": "0.97.5",
     "to-json-schema": "0.2.5",
     "tslib": "^2.4.0"
   },

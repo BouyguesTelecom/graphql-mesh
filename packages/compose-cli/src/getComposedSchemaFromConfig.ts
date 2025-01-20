@@ -17,7 +17,7 @@ import {
   getAnnotatedSubgraphs,
   type FutureAddition,
   type SubgraphConfig,
-} from '@graphql-mesh/fusion-composition';
+} from '@bouygues-telecom/graphql-fusion-composition';
 import type { Logger } from '@graphql-mesh/types';
 import { parseWithCache } from '@graphql-mesh/utils';
 import { CodeFileLoader } from '@graphql-tools/code-file-loader';

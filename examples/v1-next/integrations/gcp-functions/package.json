@@ -11,9 +11,9 @@
     "start": "functions-framework --target=mesh"
   },
   "dependencies": {
+    "@bouygues-telecom/graphql-compose-cli": "workspace:^",
     "@google-cloud/functions-framework": "^3.3.0",
     "@graphql-hive/gateway": "^1.5.8",
-    "@bouygues-telecom/graphql-compose-cli": "workspace:^",
     "@omnigraph/json-schema": "workspace:^",
     "@types/node": "^22.0.0",
     "graphql": "^16.9.0",

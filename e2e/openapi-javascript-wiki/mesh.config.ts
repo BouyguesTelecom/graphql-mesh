@@ -1,7 +1,7 @@
 import moment from 'moment';
-import { defineConfig as defineGatewayConfig } from '@graphql-hive/gateway';
 import { defineConfig as defineComposeConfig } from '@bouygues-telecom/graphql-compose-cli';
-import { loadOpenAPISubgraph } from '@omnigraph/openapi';
+import { loadOpenAPISubgraph } from '@bouygues-telecom/graphql-openapi-omnigraph';
+import { defineConfig as defineGatewayConfig } from '@graphql-hive/gateway';
 
 export const composeConfig = defineComposeConfig({
   subgraphs: [

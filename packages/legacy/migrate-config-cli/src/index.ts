@@ -4,8 +4,8 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import kebabCase from 'lodash.kebabcase';
 import { format } from 'prettier';
-import { findConfig } from '@graphql-mesh/cli';
 import { camelCase } from '@bouygues-telecom/graphql-compose-cli';
+import { findConfig } from '@graphql-mesh/cli';
 import { getPackage } from '@graphql-mesh/config';
 import type { YamlConfig } from '@graphql-mesh/types';
 import { defaultImportFn } from '@graphql-mesh/utils';
@@ -36,7 +36,10 @@ export async function run() {
 
   // Create compose configuration
   const importMap = new Map<string, Set<string>>();
-  const addedPackages = new Set<string>(['@graphql-hive/gateway', '@bouygues-telecom/graphql-compose-cli']);
+  const addedPackages = new Set<string>([
+    '@graphql-hive/gateway',
+    '@bouygues-telecom/graphql-compose-cli',
+  ]);
   const removedPackages = new Set<string>(['@graphql-mesh/cli']);
 
   // Prepare Compose Configuration
@@ -101,7 +104,11 @@ check Hive Gateway's docs to consume a supergraph.`,
     composeConfigList.add(`fetch: customFetch,`);
   }
 
-  addImport(importMap, '@bouygues-telecom/graphql-compose-cli', 'defineConfig as defineComposeConfig');
+  addImport(
+    importMap,
+    '@bouygues-telecom/graphql-compose-cli',
+    'defineConfig as defineComposeConfig',
+  );
   const configList = new Set<string>();
   const composeConfig = `
     export const composeConfig = defineComposeConfig({
@@ -402,7 +409,7 @@ const handlerInfoMap = {
     importName: 'loadRAMLSubgraph',
   },
   openapi: {
-    packageName: '@omnigraph/openapi',
+    packageName: '@bouygues-telecom/graphql-openapi-omnigraph',
     oldPackageName: '@graphql-mesh/openapi',
     importName: 'loadOpenAPISubgraph',
   },

@@ -18,7 +18,7 @@
   - @graphql-mesh/config@0.106.13
   - @graphql-mesh/utils@0.103.9
   - @graphql-mesh/cli@0.98.13
-  - @bouygues-telecom/graphql-compose-cli@1.3.2
+  - @bouygues-telecom/graphql-compose-cli@0.0.1
   - @graphql-mesh/types@0.103.9
 
 ## 1.4.4
@@ -196,7 +196,7 @@
 - Updated dependencies []:
   - @bouygues-telecom/graphql-compose-cli@1.2.3
 
-## 1.3.2
+## 0.0.1
 
 ### Patch Changes
 

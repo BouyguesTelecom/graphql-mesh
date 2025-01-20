@@ -1,11 +1,11 @@
-import { Opts } from '@e2e/opts';
 import {
   camelCase,
   createNamingConventionTransform,
   createRenameTransform,
   defineConfig as defineComposeConfig,
 } from '@bouygues-telecom/graphql-compose-cli';
-import { loadOpenAPISubgraph } from '@omnigraph/openapi';
+import { loadOpenAPISubgraph } from '@bouygues-telecom/graphql-openapi-omnigraph';
+import { Opts } from '@e2e/opts';
 
 const opts = Opts(process.argv);
 

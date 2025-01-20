@@ -35,15 +35,15 @@
     "graphql": "*"
   },
   "dependencies": {
+    "@bouygues-telecom/graphql-fusion-composition": "^0.0.1",
+    "@bouygues-telecom/graphql-json-machete": "^0.97.5",
     "@graphql-mesh/cross-helpers": "^0.4.9",
-    "@graphql-mesh/fusion-composition": "^0.7.15",
     "@graphql-mesh/string-interpolation": "^0.5.7",
     "@graphql-mesh/types": "^0.103.9",
     "@graphql-mesh/utils": "^0.103.9",
     "@graphql-tools/utils": "^10.6.4",
     "@omnigraph/json-schema": "^0.108.9",
     "change-case": "^4.1.2",
-    "@bouygues-telecom/graphql-json-machete": "^0.97.5",
     "openapi-types": "^12.1.0",
     "tslib": "^2.4.0"
   },

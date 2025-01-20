@@ -114,7 +114,7 @@
   - @graphql-mesh/utils@0.103.3
   - @graphql-mesh/types@0.103.3
 
-## 1.3.2
+## 0.0.1
 
 ### Patch Changes
 

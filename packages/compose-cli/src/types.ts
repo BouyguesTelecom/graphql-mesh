@@ -1,5 +1,5 @@
 import type { DocumentNode, GraphQLSchema } from 'graphql';
-import type { ComposeSubgraphsOptions } from '@graphql-mesh/fusion-composition';
+import type { ComposeSubgraphsOptions } from '@bouygues-telecom/graphql-fusion-composition';
 import type { Logger, MeshFetch } from '@graphql-mesh/types';
 import type { MaybePromise } from '@graphql-tools/utils';
 import type { fetch as defaultFetch } from '@whatwg-node/fetch';

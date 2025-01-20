@@ -1,5 +1,9 @@
 import type { GraphQLSchema } from 'graphql';
 import { buildSchema } from 'graphql';
+import {
+  loadNonExecutableGraphQLSchemaFromOpenAPI,
+  processDirectives,
+} from '@bouygues-telecom/graphql-openapi-omnigraph';
 import type { StoreProxy } from '@graphql-mesh/store';
 import { PredefinedProxyOptions } from '@graphql-mesh/store';
 import { stringInterpolator } from '@graphql-mesh/string-interpolation';
@@ -15,7 +19,6 @@ import type {
   YamlConfig,
 } from '@graphql-mesh/types';
 import { readFileOrUrl } from '@graphql-mesh/utils';
-import { loadNonExecutableGraphQLSchemaFromOpenAPI, processDirectives } from '@omnigraph/openapi';
 
 export default class OpenAPIHandler implements MeshHandler {
   private name: string;

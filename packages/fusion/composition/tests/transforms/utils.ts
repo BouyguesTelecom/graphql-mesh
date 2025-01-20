@@ -8,7 +8,10 @@ import {
   printSchema,
   validate,
 } from 'graphql';
-import { getUnifiedGraphGracefully, type SubgraphConfig } from '@graphql-mesh/fusion-composition';
+import {
+  getUnifiedGraphGracefully,
+  type SubgraphConfig,
+} from '@bouygues-telecom/graphql-fusion-composition';
 import { UnifiedGraphManager } from '@graphql-mesh/fusion-runtime';
 import { createDefaultExecutor } from '@graphql-tools/delegate';
 import { normalizedExecutor } from '@graphql-tools/executor';
