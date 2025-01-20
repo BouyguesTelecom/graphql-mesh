@@ -1,6 +1,6 @@
 {
   "name": "@bouygues-telecom/graphql-json-machete",
-  "version": "0.97.5",
+  "version": "0.0.1",
   "type": "module",
   "repository": {
     "type": "git",

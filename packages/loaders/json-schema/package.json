@@ -35,7 +35,7 @@
     "graphql": "*"
   },
   "dependencies": {
-    "@bouygues-telecom/graphql-json-machete": "0.97.5",
+    "@bouygues-telecom/graphql-json-machete": "0.0.1",
     "@graphql-mesh/cross-helpers": "^0.4.9",
     "@graphql-mesh/string-interpolation": "0.5.7",
     "@graphql-mesh/transport-common": "^0.7.13",

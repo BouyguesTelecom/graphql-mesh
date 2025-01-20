@@ -2939,7 +2939,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bouygues-telecom/graphql-json-machete@npm:0.97.5, @bouygues-telecom/graphql-json-machete@npm:^0.97.5, @bouygues-telecom/graphql-json-machete@workspace:packages/json-machete":
+"@bouygues-telecom/graphql-json-machete@npm:0.0.1, @bouygues-telecom/graphql-json-machete@npm:^0.0.1, @bouygues-telecom/graphql-json-machete@workspace:packages/json-machete":
   version: 0.0.0-use.local
   resolution: "@bouygues-telecom/graphql-json-machete@workspace:packages/json-machete"
   dependencies:
@@ -3006,7 +3006,7 @@ __metadata:
   resolution: "@bouygues-telecom/graphql-openapi-omnigraph@workspace:packages/loaders/openapi"
   dependencies:
     "@bouygues-telecom/graphql-fusion-composition": "npm:^0.0.1"
-    "@bouygues-telecom/graphql-json-machete": "npm:^0.97.5"
+    "@bouygues-telecom/graphql-json-machete": "npm:^0.0.1"
     "@graphql-mesh/cross-helpers": "npm:^0.4.9"
     "@graphql-mesh/string-interpolation": "npm:^0.5.7"
     "@graphql-mesh/types": "npm:^0.103.9"
@@ -6590,7 +6590,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@graphql-mesh/json-schema@workspace:packages/legacy/handlers/json-schema"
   dependencies:
-    "@bouygues-telecom/graphql-json-machete": "npm:0.97.5"
+    "@bouygues-telecom/graphql-json-machete": "npm:0.0.1"
     "@graphql-mesh/cross-helpers": "npm:^0.4.9"
     "@graphql-mesh/store": "npm:^0.103.9"
     "@graphql-mesh/string-interpolation": "npm:0.5.7"
@@ -10571,7 +10571,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@omnigraph/json-schema@workspace:packages/loaders/json-schema"
   dependencies:
-    "@bouygues-telecom/graphql-json-machete": "npm:0.97.5"
+    "@bouygues-telecom/graphql-json-machete": "npm:0.0.1"
     "@graphql-mesh/cross-helpers": "npm:^0.4.9"
     "@graphql-mesh/string-interpolation": "npm:0.5.7"
     "@graphql-mesh/transport-common": "npm:^0.7.13"
@@ -10673,7 +10673,7 @@ __metadata:
   resolution: "@omnigraph/raml@workspace:packages/loaders/raml"
   dependencies:
     "@ardatan/raml-1-parser": "npm:1.1.69"
-    "@bouygues-telecom/graphql-json-machete": "npm:0.97.5"
+    "@bouygues-telecom/graphql-json-machete": "npm:^0.0.1"
     "@graphql-mesh/cross-helpers": "npm:^0.4.9"
     "@graphql-mesh/string-interpolation": "npm:0.5.7"
     "@graphql-mesh/types": "npm:^0.103.9"
