@@ -2,7 +2,7 @@ name: Publish to NPM
 
 on:
   release:
-    types: [ created ]
+    types: [created]
 
 jobs:
   build:
@@ -16,15 +16,10 @@ jobs:
         with:
           node-version: '18.x'
           registry-url: 'https://registry.npmjs.org'
-          
 
       - name: Extract version tag
         id: get_version
         run: echo "::set-output name=VERSION::${GITHUB_REF#refs/tags/}"
-
-      - name: Change version for React package 📌
-        run: |
-          npm version --workspace packages/react --no-git-tag-version ${{ steps.get_version.outputs.VERSION }}
 
       - name: Install dependencies
         run: |
@@ -37,18 +32,25 @@ jobs:
           npm run test
 
       - name: Publish Json Machete on NPM 📦
-        run: npm version --workspace packages/@bouygues-telecom/graphql-json-machete --no-git-tag-version ${{ steps.get_version.outputs.VERSION }} && npm publish --workspace packages/@bouygues-telecom/graphql-json-machete --access public
+        run:
+          npm version --workspace packages/@bouygues-telecom/graphql-json-machete
+          --no-git-tag-version ${{ steps.get_version.outputs.VERSION }} && npm publish --workspace
+          packages/@bouygues-telecom/graphql-json-machete --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_TOKEN }}
 
       - name: Publish Loaders Openapi on NPM 📦
-        run: npm version --workspace packages/loaders/openapi --no-git-tag-version ${{ steps.get_version.outputs.VERSION }} && npm publish --workspace packages/loaders/openapi --access public
+        run:
+          npm version --workspace packages/loaders/openapi --no-git-tag-version ${{
+          steps.get_version.outputs.VERSION }} && npm publish --workspace packages/loaders/openapi
+          --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_TOKEN }}
 
       - name: Publish Fusion Composition package on NPM 📦
-        run: npm version --workspace packages/fusion/composition --no-git-tag-version ${{ steps.get_version.outputs.VERSION }} && npm publish --workspace packages/fusion/composition --access public
+        run:
+          npm version --workspace packages/fusion/composition --no-git-tag-version ${{
+          steps.get_version.outputs.VERSION }} && npm publish --workspace
+          packages/fusion/composition --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_TOKEN }}
-
-

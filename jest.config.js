@@ -107,6 +107,8 @@ module.exports = {
     '@graphql-mesh/opentelemetry':
       '<rootDir>/node_modules/@graphql-mesh/opentelemetry/dist/index.cjs',
     '@graphql-mesh/prometheus': '<rootDir>/node_modules/@graphql-mesh/prometheus/dist/index.cjs',
+    '@bouygues-telecom/graphql-json-machete':
+      '<rootDir>/node_modules/@bouygues-telecom/graphql-json-machete/src',
 
     '^graphql$': '<rootDir>/node_modules/graphql/index.js',
     ...pathsToModuleNameMapper(tsconfig.compilerOptions.paths, {
