@@ -107,8 +107,14 @@ module.exports = {
     '@graphql-mesh/opentelemetry':
       '<rootDir>/node_modules/@graphql-mesh/opentelemetry/dist/index.cjs',
     '@graphql-mesh/prometheus': '<rootDir>/node_modules/@graphql-mesh/prometheus/dist/index.cjs',
+    '@bouygues-telecom/graphql-composition-cli':
+      '<rootDir>/node_modules/@bouygues-telecom/graphql-composition-cli/dist/cjs/index.js',
+    '@bouygues-telecom/graphql-fusion-composition':
+      '<rootDir>/node_modules/@bouygues-telecom/graphql-fusion-composition/dist/cjs/index.js',
     '@bouygues-telecom/graphql-json-machete':
-      '<rootDir>/node_modules/@bouygues-telecom/graphql-json-machete/src',
+      '<rootDir>/node_modules/@bouygues-telecom/graphql-json-machete/dist/cjs/index.js',
+    '@bouygues-telecom/graphql-openapi-omnigraph':
+      '<rootDir>/node_modules/@bouygues-telecom/graphql-openapi-omnigraph/dist/cjs/index.js',
 
     '^graphql$': '<rootDir>/node_modules/graphql/index.js',
     ...pathsToModuleNameMapper(tsconfig.compilerOptions.paths, {

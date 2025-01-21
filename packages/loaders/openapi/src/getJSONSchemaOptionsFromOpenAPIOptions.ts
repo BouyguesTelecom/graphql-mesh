@@ -475,7 +475,8 @@ export async function getJSONSchemaOptionsFromOpenAPIOptions(
          *
          * Reference: https://swagger.io/docs/specification/v3_0/describing-responses/ ("Empty Response Body" section)
          */
-        if ('content' in responseObj && Object.keys(responseObj.content).length !== 0) {
+        // if ('content' in responseObj && Object.keys(responseObj.content).length !== 0) {
+        if ('content' in responseObj) {
           const responseObjForStatusCode: {
             oneOf: JSONSchemaObject[];
           } = {

@@ -52,7 +52,7 @@ function removeUnnecessaryProperties(obj, seen = []) {
   delete obj.minLength;
   delete obj.maxItems;
   delete obj.minimum;
-  for (let key in obj) {
+  for (const key in obj) {
     if (typeof obj[key] === 'object' && obj[key] !== null) {
       removeUnnecessaryProperties(obj[key], seen);
     }
@@ -70,7 +70,7 @@ export async function healJSONSchema(
     {
       enter: async function healSubschema(subSchema, { path }) {
         if (typeof subSchema === 'object') {
-          removeUnnecessaryProperties(subSchema);
+          // removeUnnecessaryProperties(subSchema);
           if (
             subSchema.title === 'Any' ||
             (subSchema.oneOf && inspect(subSchema.oneOf) === anySchemaOneOfInspect)
