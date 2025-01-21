@@ -2860,6 +2860,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bouygues-telecom/omnigraph-openapi@workspace:packages/loaders/openapi":
+  version: 0.0.0-use.local
+  resolution: "@bouygues-telecom/omnigraph-openapi@workspace:packages/loaders/openapi"
+  dependencies:
+    "@graphql-mesh/cross-helpers": "npm:^0.4.9"
+    "@graphql-mesh/fusion-composition": "npm:^0.7.15"
+    "@graphql-mesh/string-interpolation": "npm:^0.5.7"
+    "@graphql-mesh/types": "npm:^0.103.9"
+    "@graphql-mesh/utils": "npm:^0.103.9"
+    "@graphql-tools/utils": "npm:^10.6.4"
+    "@omnigraph/json-schema": "npm:^0.108.9"
+    "@whatwg-node/fetch": "npm:0.10.1"
+    change-case: "npm:^4.1.2"
+    fets: "npm:0.8.4"
+    graphql-yoga: "npm:5.10.6"
+    json-bigint-patch: "npm:0.0.8"
+    json-machete: "npm:^0.97.5"
+    openapi-types: "npm:^12.1.0"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    graphql: "*"
+  languageName: unknown
+  linkType: soft
+
 "@braintree/sanitize-url@npm:^7.0.1":
   version: 7.1.0
   resolution: "@braintree/sanitize-url@npm:7.1.0"
@@ -10224,9 +10248,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@omnigraph/openapi@npm:0.108.11, @omnigraph/openapi@workspace:*, @omnigraph/openapi@workspace:^, @omnigraph/openapi@workspace:packages/loaders/openapi":
-  version: 0.0.0-use.local
-  resolution: "@omnigraph/openapi@workspace:packages/loaders/openapi"
+"@omnigraph/openapi@file:./packages/loaders/openapi::locator=graphql-mesh%40workspace%3A.":
+  version: 0.0.1
+  resolution: "@omnigraph/openapi@file:./packages/loaders/openapi#./packages/loaders/openapi::hash=166e20&locator=graphql-mesh%40workspace%3A."
   dependencies:
     "@graphql-mesh/cross-helpers": "npm:^0.4.9"
     "@graphql-mesh/fusion-composition": "npm:^0.7.15"
@@ -10235,18 +10259,15 @@ __metadata:
     "@graphql-mesh/utils": "npm:^0.103.9"
     "@graphql-tools/utils": "npm:^10.6.4"
     "@omnigraph/json-schema": "npm:^0.108.9"
-    "@whatwg-node/fetch": "npm:0.10.1"
     change-case: "npm:^4.1.2"
-    fets: "npm:0.8.4"
-    graphql-yoga: "npm:5.10.6"
-    json-bigint-patch: "npm:0.0.8"
     json-machete: "npm:^0.97.5"
     openapi-types: "npm:^12.1.0"
     tslib: "npm:^2.4.0"
   peerDependencies:
     graphql: "*"
-  languageName: unknown
-  linkType: soft
+  checksum: 10c0/f902a2a26bc399e6e21eaa46ad322707f3b15ad65bd23f5606e6429f12b0c208bcac0ee5e6c284ad7867b6615ec2db1d9f24d8235f872fddf12e572bcc4241b8
+  languageName: node
+  linkType: hard
 
 "@omnigraph/raml@npm:0.108.9, @omnigraph/raml@workspace:packages/loaders/raml":
   version: 0.0.0-use.local
