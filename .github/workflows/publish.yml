@@ -20,7 +20,15 @@ jobs:
 
       - name: Extract version tag
         id: get_version
-        run: echo "::set-output name=VERSION::${GITHUB_REF#refs/tags/}"
+        run: |
+          echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+
+      - name: Install jq
+        run: sudo apt-get install jq
+
+      - name: Update package name and version in package.json
+        run: |
+          jq --arg name "@bouygues-telecom/omnigraph-openapi" --arg ver "$VERSION" '.name = $name | .version = $ver' packages/loaders/openapi/package.json > tmp.json && mv tmp.json packages/loaders/openapi/package.json
 
       - name: Install dependencies
         run: yarn install --immutable
@@ -28,9 +36,15 @@ jobs:
       - name: Build project
         run: yarn build
 
-      - name: Publish Loaders Openapi on NPM 📦
+      - name: Commit and push changes
         run: |
-          npm version --workspace packages/loaders/openapi --no-git-tag-version "${{ steps.get_version.outputs.VERSION }}"
-          npm publish --workspace packages/loaders/openapi --access public
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add packages/loaders/openapi/package.json
+          git commit -m "Update package name and version to $VERSION"
+          git push
+
+      - name: Publish Loaders Openapi on NPM 📦
+        run: npm publish --workspace packages/loaders/openapi --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_TOKEN }}
