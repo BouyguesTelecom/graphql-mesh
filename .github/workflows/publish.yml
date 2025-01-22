@@ -12,7 +12,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: ${{ github.ref }} # Assurez-vous de vérifier le tag ou la branche
+          ref: ${{ github.ref }}
+          fetch-depth: 0 # Assurez-vous de récupérer toute l'historique pour permettre de forcer le push
 
       - name: Setup Node
         uses: actions/setup-node@v2
@@ -35,17 +36,18 @@ jobs:
 
       - name: Update package name and version in package.json
         run: |
-          jq --arg name "@bouygues-telecom/omnigraph-openapi" --arg ver "$VERSION" '.name = $name | .version = $ver' packages/loaders/openapi/package.json > tmp.json && mv tmp.json packages/loaders/openapi/package.json
+          jq --arg name "@bouygues-telecom/omnigraph-openapi" --arg ver "$VERSION" --arg url "https://github.com/BouyguesTelecom/graphql-mesh.git" \
+            '.name = $name | .version = $ver | .repository.url = $url' packages/loaders/openapi/package.json > tmp.json && mv tmp.json packages/loaders/openapi/package.json
 
       - name: Commit and push changes
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -B release-branch    # Crée ou bascule sur une branche temporaire
+          git checkout -B update-version-branch
           git add packages/loaders/openapi/package.json
           git commit -m "Update package name and version to $VERSION"
-          git push origin release-branch    # Pousse vers la branche temporaire
-          git checkout -  # Retours à état détaché de HEAD
+          git push origin update-version-branch
+          git checkout -
 
       - name: Publish Loaders Openapi on NPM 📦
         run: npm publish --workspace packages/loaders/openapi --access public
