@@ -6,9 +6,9 @@
     "start": "ts-node-dev src/index.ts"
   },
   "dependencies": {
+    "@bouygues-telecom/omnigraph-openapi": "workspace:^",
     "@graphql-hive/gateway": "^1.5.8",
     "@graphql-mesh/compose-cli": "workspace:^",
-    "@omnigraph/openapi": "workspace:^",
     "fastify": "^5.0.0",
     "graphql": "16.10.0",
     "ts-node": "^10.9.2",
