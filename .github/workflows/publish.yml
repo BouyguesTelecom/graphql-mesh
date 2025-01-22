@@ -6,7 +6,7 @@ on:
 
 permissions:
   contents: read
-  id-token: write # Ajout de cette ligne pour la permission id-token
+  id-token: write
 
 jobs:
   build:
@@ -42,7 +42,7 @@ jobs:
         run: |
           jq --arg name "@bouygues-telecom/omnigraph-openapi" --arg ver "$VERSION" \
             --arg url "https://github.com/BouyguesTelecom/graphql-mesh.git" \
-            '.name = $name | .version = $ver' packages/loaders/openapi/package.json > tmp.json \
+            '.name = $name | .version = $ver | .repository.url = $url' packages/loaders/openapi/package.json > tmp.json \
             && mv tmp.json packages/loaders/openapi/package.json
 
       - name: Verify package.json changes
