@@ -7,10 +7,10 @@
     "start": "npx hive-gateway"
   },
   "dependencies": {
+    "@bouygues-telecom/omnigraph-openapi": "workspace:^",
     "@graphql-hive/gateway": "^1.5.8",
     "@graphql-mesh/cache-localforage": "workspace:^",
     "@graphql-mesh/compose-cli": "workspace:^",
-    "@omnigraph/openapi": "workspace:^",
     "graphql": "^16.9.0"
   }
 }
