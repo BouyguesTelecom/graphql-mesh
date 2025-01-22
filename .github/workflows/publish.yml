@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 0 # Assurez-vous de récupérer tout l'historique pour permettre de forcer le push
 
       - name: Setup Node
         uses: actions/setup-node@v2
@@ -44,12 +44,14 @@ jobs:
         run: cat packages/loaders/openapi/package.json
 
       - name: Commit and push changes
+        env:
+          BRANCH_NAME: ${{ github.ref_name }}
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git add packages/loaders/openapi/package.json
           git commit -m "Update package name and version to $VERSION"
-          git push origin HEAD
+          git push origin HEAD:${BRANCH_NAME}
 
       - name: Publish Loaders Openapi on NPM 📦
         run: npm publish --workspace packages/loaders/openapi --access public
