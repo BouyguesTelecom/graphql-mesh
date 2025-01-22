@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: ${{ github.ref }}
-          fetch-depth: 0 # Assurez-vous de récupérer toute l'historique pour permettre de forcer le push
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v2
@@ -32,22 +32,25 @@ jobs:
         run: yarn build
 
       - name: Install jq
-        run: sudo apt-get install jq
+        run: sudo apt-get install -y jq
 
       - name: Update package name and version in package.json
         run: |
-          jq --arg name "@bouygues-telecom/omnigraph-openapi" --arg ver "$VERSION" --arg url "https://github.com/BouyguesTelecom/graphql-mesh.git" \
-            '.name = $name | .version = $ver | .repository.url = $url' packages/loaders/openapi/package.json > tmp.json && mv tmp.json packages/loaders/openapi/package.json
+          cat packages/loaders/openapi/package.json
+          jq --arg name "@bouygues-telecom/omnigraph-openapi" --arg ver "$VERSION" --arg repo "https://github.com/BouyguesTelecom/graphql-mesh.git" \
+           '.name = $name | .version = $ver | .repository.url = $repo' packages/loaders/openapi/package.json > tmp.json && mv tmp.json packages/loaders/openapi/package.json
+          cat packages/loaders/openapi/package.json
 
       - name: Commit and push changes
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -B update-version-branch
           git add packages/loaders/openapi/package.json
           git commit -m "Update package name and version to $VERSION"
-          git push origin update-version-branch
-          git checkout -
+          git push origin HEAD:${{ github.ref }}
+
+      - name: Verify package.json changes
+        run: cat packages/loaders/openapi/package.json
 
       - name: Publish Loaders Openapi on NPM 📦
         run: npm publish --workspace packages/loaders/openapi --access public
