@@ -43,15 +43,24 @@ jobs:
       - name: Verify package.json changes
         run: cat packages/loaders/openapi/package.json
 
+      - name: Set up branch name
+        id: setup_branch
+        run: echo "BRANCH_NAME=$(git symbolic-ref --short HEAD)" >> $GITHUB_ENV
+
       - name: Commit and push changes
         env:
-          BRANCH_NAME: ${{ github.ref_name }}
+          BRANCH_NAME: ${{ env.BRANCH_NAME }}
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b temp-branch
           git add packages/loaders/openapi/package.json
           git commit -m "Update package name and version to $VERSION"
-          git push origin HEAD:${BRANCH_NAME}
+          git push origin temp-branch
+          git checkout ${{ env.BRANCH_NAME }}
+          git merge temp-branch
+          git push origin ${{ env.BRANCH_NAME }}
+          git push origin --delete temp-branch
 
       - name: Publish Loaders Openapi on NPM 📦
         run: npm publish --workspace packages/loaders/openapi --access public
